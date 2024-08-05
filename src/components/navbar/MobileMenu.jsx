@@ -3,7 +3,7 @@ import { faX } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 import styles from './MobileMenu.module.css';
 
-function MobileMenu({ isOpen, setMenuIsOpen }) {
+function MobileMenu({ theme, isOpen, setMenuIsOpen }) {
     return (
         <div className={styles.menuContainer}>
             <ul
@@ -12,21 +12,44 @@ function MobileMenu({ isOpen, setMenuIsOpen }) {
                     isOpen ? styles.active : ''
                 )}
             >
-                <li>
+                <li className={styles.menuLink}>
                     <a
-                        className={styles.btn}
+                        className={classNames(
+                            styles.btn,
+                            theme === 'light'
+                                ? styles.lightHover
+                                : styles.darkHover
+                        )}
                         onClick={() => setMenuIsOpen(false)}
                     >
-                        <FontAwesomeIcon icon={faX} color="#121212" />
+                        <FontAwesomeIcon icon={faX} size="xs" />
                     </a>
                 </li>
-                <li>
+                <li
+                    className={classNames(
+                        styles.menuLink,
+                        styles.fitContent,
+                        theme === 'light' ? styles.lightHover : styles.darkHover
+                    )}
+                >
                     <a>ABOUT</a>
                 </li>
-                <li>
+                <li
+                    className={classNames(
+                        styles.menuLink,
+                        styles.fitContent,
+                        theme === 'light' ? styles.lightHover : styles.darkHover
+                    )}
+                >
                     <a>PROJECTS</a>
                 </li>
-                <li>
+                <li
+                    className={classNames(
+                        styles.fitContent,
+                        styles.menuLink,
+                        theme === 'light' ? styles.lightHover : styles.darkHover
+                    )}
+                >
                     <a>CONTACT</a>
                 </li>
             </ul>

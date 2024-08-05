@@ -58,14 +58,6 @@
     border-radius: 50%;
 }
 
-.lightHover:hover {
-    background-color: rgb(248, 247, 247);
-}
-
-.darkHover:hover {
-    background-color: rgb(50, 47, 47);
-}
-
 .padSun {
     padding: 16px;
 }
@@ -88,6 +80,14 @@
 .menu:hover {
     animation: shake 3s infinite;
     border-radius: 50%;
+}
+
+.lightHover:hover {
+    background-color: rgb(248, 247, 247);
+}
+
+.darkHover:hover {
+    background-color: rgb(50, 47, 47);
 }
 
 @keyframes shake {

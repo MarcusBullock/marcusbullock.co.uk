@@ -63,7 +63,11 @@ function Navbar({ theme, toggleTheme }) {
                 </div>
             </nav>
             {menuIsOpen && (
-                <MobileMenu show={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
+                <MobileMenu
+                    theme={theme}
+                    show={menuIsOpen}
+                    setMenuIsOpen={setMenuIsOpen}
+                />
             )}
         </>
     );
