@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 import styles from './MobileMenu.module.css';
+import MobileMenuItem from './MobileMenuItem';
 
 function MobileMenu({ theme, isOpen, setMenuIsOpen }) {
     return (
@@ -12,7 +13,7 @@ function MobileMenu({ theme, isOpen, setMenuIsOpen }) {
                     isOpen ? styles.active : ''
                 )}
             >
-                <li className={styles.menuLink}>
+                <li>
                     <a
                         className={classNames(
                             styles.btn,
@@ -25,33 +26,9 @@ function MobileMenu({ theme, isOpen, setMenuIsOpen }) {
                         <FontAwesomeIcon icon={faX} size="xs" />
                     </a>
                 </li>
-                <li
-                    className={classNames(
-                        styles.menuLink,
-                        styles.fitContent,
-                        theme === 'light' ? styles.lightHover : styles.darkHover
-                    )}
-                >
-                    <a>ABOUT</a>
-                </li>
-                <li
-                    className={classNames(
-                        styles.menuLink,
-                        styles.fitContent,
-                        theme === 'light' ? styles.lightHover : styles.darkHover
-                    )}
-                >
-                    <a>PROJECTS</a>
-                </li>
-                <li
-                    className={classNames(
-                        styles.fitContent,
-                        styles.menuLink,
-                        theme === 'light' ? styles.lightHover : styles.darkHover
-                    )}
-                >
-                    <a>CONTACT</a>
-                </li>
+                <MobileMenuItem title="ABOUT" theme={theme} />
+                <MobileMenuItem title="PROJECTS" theme={theme} />
+                <MobileMenuItem title="CONTACT" theme={theme} />
             </ul>
         </div>
     );

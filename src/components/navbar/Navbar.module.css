@@ -2,7 +2,10 @@
     background-color: var(--background-color);
     color: var(--text-color);
     transition: background-color 1s, color 1s;
-    padding: 1.9rem 0;
+    padding: 0.75rem 0;
+    opacity: 0.97;
+    position: sticky;
+    top: 0;
 }
 
 .navContainer {
@@ -45,41 +48,6 @@
     justify-content: space-between;
     margin-left: auto;
     user-select: none;
-    caret: none;
-}
-
-.icon {
-    cursor: pointer;
-}
-
-.icon:hover {
-    animation: shake 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-    animation-iteration-count: infinite;
-    border-radius: 50%;
-}
-
-.padSun {
-    padding: 16px;
-}
-
-.padMoon {
-    padding: 16px 19px;
-}
-
-.menu {
-    text-align: end;
-    width: 34px;
-    height: 34px;
-    padding: 13px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu:hover {
-    animation: shake 3s infinite;
-    border-radius: 50%;
 }
 
 .lightHover:hover {
@@ -113,8 +81,36 @@
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
+    .navbar {
+        padding: unset;
+    }
+
     .buttons {
         display: none;
+    }
+
+    .links {
+        font-family: 'Mova';
+        font-size: 21px;
+        display: flex;
+        flex-flow: row nowrap;
+        list-style-type: none;
+        align-items: center;
+        margin-left: auto;
+        letter-spacing: 3px;
+        font-weight: 400;
+        color: var(--text-color);
+        overflow: hidden;
+        padding-right: 20px;
+    }
+
+    li {
+        padding-left: 3.5rem;
+    }
+
+    li:last-child {
+        padding-left: 1.5rem;
+        margin-bottom: 5px;
     }
 }

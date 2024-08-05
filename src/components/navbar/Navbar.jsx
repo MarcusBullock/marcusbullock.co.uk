@@ -1,14 +1,11 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-regular-svg-icons';
-import { faSun } from '@fortawesome/free-regular-svg-icons';
-import LogoLight from '../../../src/assets/logo-for-lightmode.png';
-import LogoDark from '../../../src/assets/logo-for-darkmode.png';
-import MenuDark from '../../../src/assets/mobile-menu-darkmode.png';
-import MenuLight from '../../../src/assets/mobile-menu-lightmode.png';
+import LogoLight from '../../../src/assets/images/logo-for-lightmode.png';
+import LogoDark from '../../../src/assets/images/logo-for-darkmode.png';
 import styles from './Navbar.module.css';
-import classNames from 'classnames';
 import { useState } from 'react';
-import MobileMenu from './MobileMenu';
+import MobileMenu from './mobileMenu/MobileMenu';
+import DarkModeToggle from './darkMode/DarkModeToggle';
+import MobileMenuButton from './mobileMenu/MobileMenuButton';
+import NavbarItems from './NavbarItems';
 
 function Navbar({ theme, toggleTheme }) {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -23,42 +20,17 @@ function Navbar({ theme, toggleTheme }) {
                         />
                         <span className={styles.logoText}>arcus</span>
                     </div>
+                    <NavbarItems theme={theme} toggleTheme={toggleTheme} />
                     <div className={styles.buttons}>
-                        <div
-                            className={classNames(
-                                styles.icon,
-                                theme === 'light'
-                                    ? styles.lightHover
-                                    : styles.darkHover
-                            )}
-                            onClick={toggleTheme}
-                        >
-                            <FontAwesomeIcon
-                                className={
-                                    theme === 'dark'
-                                        ? styles.padSun
-                                        : styles.padMoon
-                                }
-                                icon={theme === 'light' ? faMoon : faSun}
-                                size="2xl"
-                            />
-                        </div>
-                        <a
-                            className={classNames(
-                                styles.menu,
-                                theme === 'light'
-                                    ? styles.lightHover
-                                    : styles.darkHover
-                            )}
-                            onClick={() => setMenuIsOpen(!menuIsOpen)}
-                        >
-                            <img
-                                height={34}
-                                width={34}
-                                src={theme === 'light' ? MenuLight : MenuDark}
-                                alt="logo"
-                            />
-                        </a>
+                        <DarkModeToggle
+                            theme={theme}
+                            toggleTheme={toggleTheme}
+                        />
+                        <MobileMenuButton
+                            menuIsOpen={menuIsOpen}
+                            setMenuIsOpen={setMenuIsOpen}
+                            theme={theme}
+                        />
                     </div>
                 </div>
             </nav>
