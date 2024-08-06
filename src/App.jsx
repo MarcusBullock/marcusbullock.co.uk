@@ -2,6 +2,7 @@ import Navbar from './components/navbar/Navbar';
 import * as classNames from 'classnames';
 import styles from './index.css?inline';
 import { useEffect, useState } from 'react';
+import Hero from './components/hero/Hero';
 
 function App() {
     const [theme, setTheme] = useState('light');
@@ -24,7 +25,9 @@ function App() {
     return (
         <div className={classNames(`App ${theme}`, styles.container)}>
             <Navbar toggleTheme={toggleTheme} theme={theme} />
-            <main style={{ backgroundColor: 'grey' }}></main>
+            <main>
+                <Hero theme={theme} />
+            </main>
         </div>
     );
 }
