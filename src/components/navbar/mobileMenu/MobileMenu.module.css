@@ -13,6 +13,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    user-select: none;
 }
 
 .mobileMenu.active {
@@ -32,10 +33,14 @@
     font-size: 50px;
 }
 
+li:nth-child(-n + 3) {
+    margin-left: 15px;
+}
+
 .btn {
     position: absolute;
     top: 20px;
-    right: 2px;
+    right: 15px;
     cursor: pointer;
     padding: 8px 24px;
     border-radius: 50%;

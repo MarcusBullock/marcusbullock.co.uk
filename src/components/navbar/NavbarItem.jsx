@@ -11,7 +11,14 @@ function NavbarItem({ title, isSelected, setSelectedTab, theme }) {
                 theme === 'light' ? styles.lightHover : styles.darkHover
             )}
         >
-            <a onClick={() => setSelectedTab(title)}>{title}</a>
+            <a
+                onClick={(e) => {
+                    e.preventDefault();
+                    setSelectedTab(title);
+                }}
+            >
+                {title}
+            </a>
         </li>
     );
 }

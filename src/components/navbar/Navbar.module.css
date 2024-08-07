@@ -4,10 +4,13 @@
     transition: background-color 1s, color 1s;
     padding: 0.75rem 0;
     opacity: 0.97;
-    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.sticky {
+    position: sticky;
 }
 
 .navContainer {
@@ -50,6 +53,7 @@
     justify-content: space-between;
     margin-left: auto;
     user-select: none;
+    margin-right: 15px;
 }
 
 .lightHover:hover {
