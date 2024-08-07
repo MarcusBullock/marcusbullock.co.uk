@@ -1,25 +1,10 @@
-import { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import Hero from './components/hero/Hero';
 import Navbar from './components/navbar/Navbar';
+import { useDarkMode } from './hooks/useDarkMode';
 
 function App() {
-    const [theme, setTheme] = useState('light');
-
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setTheme(savedTheme);
-        }
-    }, []);
-
-    useEffect(() => {
-        localStorage.setItem('theme', theme);
-    }, [theme]);
-
-    const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
-    };
+    const [theme, toggleTheme] = useDarkMode();
 
     return (
         <BrowserRouter>

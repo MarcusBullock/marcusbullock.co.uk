@@ -4,26 +4,36 @@ import * as classNames from 'classnames';
 
 function AnimatedLetters({
     str,
+    theme,
+    color,
     className,
     enableHoverEffect = false,
     speed = 10,
 }) {
     return (
-        <div className={classNames(styles.animatedLetters, className)}>
+        <span className={classNames(styles.animatedLetters, className)}>
             {str.split('').map((char, index) => (
                 <motion.span
                     key={index}
                     className={enableHoverEffect ? styles.animatedLetter : ''}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
+                    color={
+                        color != null
+                            ? color
+                            : theme === 'light'
+                            ? 'rgb(96, 94, 94)'
+                            : 'rgb(140, 137, 137)'
+                    }
                     whileHover={
                         enableHoverEffect
                             ? {
                                   scale: 1.2,
                                   transition: { duration: 1 },
                                   color: '#9d9801',
-                                  marginLeft: '5px',
-                                  marginRight: '5px',
+                                  paddingLeft: '5px',
+                                  paddingRight: '5px',
+                                  delay: 1,
                               }
                             : null
                     }
@@ -35,7 +45,7 @@ function AnimatedLetters({
                     {char === ' ' ? <>&nbsp;</> : char}
                 </motion.span>
             ))}
-        </div>
+        </span>
     );
 }
 

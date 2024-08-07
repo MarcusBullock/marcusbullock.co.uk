@@ -62,6 +62,12 @@
     }
 
     .heroSubText {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .heroSubText {
         font-size: 26px;
     }
 }

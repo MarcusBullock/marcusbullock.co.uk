@@ -7,7 +7,11 @@ function Introduction({ theme }) {
         <div>
             <h1 className={styles.introduction}>
                 <div className={styles.animatedIntro}>
-                    <AnimatedLetters str="Hi," enableHoverEffect={true} />
+                    <AnimatedLetters
+                        theme={theme}
+                        str="Hi,"
+                        enableHoverEffect={true}
+                    />
                     <AnimatedLetters
                         className={styles.gap}
                         str="I'm"
@@ -21,8 +25,24 @@ function Introduction({ theme }) {
                     theme === 'light' ? styles.nameLight : styles.nameDark
                 )}
             >
-                <AnimatedLetters str="Marcus" enableHoverEffect={true} />
-                <AnimatedLetters str="Bullock" enableHoverEffect={true} />
+                <AnimatedLetters
+                    color={`${
+                        theme === 'light'
+                            ? 'rgb(113, 111, 111)'
+                            : 'rgb(179, 177, 177)'
+                    }`}
+                    str="Marcus"
+                    enableHoverEffect={true}
+                />
+                <AnimatedLetters
+                    color={`${
+                        theme === 'light'
+                            ? 'rgb(113, 111, 111)'
+                            : 'rgb(179, 177, 177)'
+                    }`}
+                    str="Bullock"
+                    enableHoverEffect={true}
+                />
             </span>
             <p className={styles.heroSubText}>
                 <AnimatedLetters str="Software developer." speed={15} />

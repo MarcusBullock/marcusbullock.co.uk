@@ -1,5 +1,6 @@
 .mobileMenu {
     font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
