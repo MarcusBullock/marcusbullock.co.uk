@@ -232,7 +232,7 @@
 
 @media screen and (min-width: 1024px) {
     .mainSectionContainer {
-        top: 150px;
+        top: 280px;
     }
 
     .heroMainText {
@@ -243,11 +243,5 @@
     .heroSubText {
         font-size: 30px;
         line-height: 40px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .mainSectionContainer {
-        top: 250px;
     }
 }
