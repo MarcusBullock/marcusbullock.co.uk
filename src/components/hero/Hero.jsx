@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import BigMapImage from '../../assets/images/big-map.jpeg';
 import SmallMapImage from '../../assets/images/small-map.png';
 import * as classNames from 'classnames';
@@ -72,6 +73,32 @@ function Hero({ theme }) {
                     </div>
                     <div className={styles.divider}></div>
                     <div></div>
+                </div>
+
+                {/* {scrolly mouse animation} */}
+                <div className={styles.mouseyBoi}>
+                    <a href="#about">
+                        <div
+                            className={classNames(
+                                styles.mouseyBoiContainer,
+                                theme === 'light'
+                                    ? styles.mouseLight
+                                    : styles.mouseDark
+                            )}
+                        >
+                            <motion.div
+                                animate={{
+                                    y: [0, 24, 0],
+                                }}
+                                transition={{
+                                    duration: 1.5,
+                                    repeat: Infinity,
+                                    repeatType: 'loop',
+                                }}
+                                className={styles.mouseMotion}
+                            />
+                        </div>
+                    </a>
                 </div>
             </section>
         </>

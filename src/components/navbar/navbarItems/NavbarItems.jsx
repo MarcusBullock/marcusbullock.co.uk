@@ -16,22 +16,22 @@ function NavbarItems({ activeTabName, setActiveTabName, theme, toggleTheme }) {
     return (
         <ul className={styles.navbarItems}>
             <NavbarItem
-                key="ABOUT"
-                className={getItemStyles('ABOUT')}
-                title="ABOUT"
-                setActiveTabName={() => setActiveTabName('ABOUT')}
+                key="about"
+                className={getItemStyles('about')}
+                title="about"
+                setActiveTabName={() => setActiveTabName('about')}
             />
             <NavbarItem
-                key="PROJECTS"
-                className={getItemStyles('PROJECTS')}
-                title="PROJECTS"
-                setActiveTabName={() => setActiveTabName('PROJECTS')}
+                key="projects"
+                className={getItemStyles('projects')}
+                title="projects"
+                setActiveTabName={() => setActiveTabName('projects')}
             />
             <NavbarItem
-                key="CONTACT"
-                className={getItemStyles('CONTACT')}
-                title="CONTACT"
-                setActiveTabName={() => setActiveTabName('CONTACT')}
+                key="contact"
+                className={getItemStyles('contact')}
+                title="contact"
+                setActiveTabName={() => setActiveTabName('contact')}
             />
             <li>
                 <DarkModeToggle theme={theme} toggleTheme={toggleTheme} />

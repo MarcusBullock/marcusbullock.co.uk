@@ -27,21 +27,21 @@ function MobileMenu({ theme, menuIsOpen, setActiveTabName, setMenuIsOpen }) {
                     </a>
                 </li>
                 <MobileMenuItem
-                    title="ABOUT"
+                    title="about"
                     theme={theme}
                     toggle={menuIsOpen}
                     setToggle={setMenuIsOpen}
                     setActive={setActiveTabName}
                 />
                 <MobileMenuItem
-                    title="PROJECTS"
+                    title="projects"
                     theme={theme}
                     toggle={menuIsOpen}
                     setToggle={setMenuIsOpen}
                     setActive={setActiveTabName}
                 />
                 <MobileMenuItem
-                    title="CONTACT"
+                    title="contact"
                     theme={theme}
                     toggle={menuIsOpen}
                     setToggle={setMenuIsOpen}
