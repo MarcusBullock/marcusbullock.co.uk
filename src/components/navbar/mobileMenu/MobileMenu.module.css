@@ -32,8 +32,14 @@
     cursor: pointer;
     font-size: 50px;
 }
+li:nth-last-child(1) {
+    margin-left: 15px;
+}
+li:nth-last-child(2) {
+    margin-left: 15px;
+}
 
-li:nth-child(-n + 3) {
+li:nth-last-child(3) {
     margin-left: 15px;
 }
 
