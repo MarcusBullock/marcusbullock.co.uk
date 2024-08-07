@@ -1,0 +1,69 @@
+.introduction {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 40px;
+    margin-top: 0.5rem;
+    font-family: 'Poppins';
+    margin-bottom: 0;
+}
+
+.name {
+    color: var(--text-color);
+    font-family: 'Mova';
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.heroSubText {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    font-family: 'Segoe UI Semibold';
+}
+
+@media screen and (min-width: 320px) {
+    .introduction {
+        font-size: 50px;
+    }
+
+    .heroSubText {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .introduction {
+        font-size: 60px;
+    }
+
+    .name {
+        color: rgb(126, 124, 124);
+        font-size: 90px;
+    }
+
+    .nameLight {
+        color: rgb(126, 124, 124);
+    }
+
+    .nameDark {
+        color: rgb(179, 177, 177);
+    }
+
+    .heroSubText {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .introduction {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .heroSubText {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}

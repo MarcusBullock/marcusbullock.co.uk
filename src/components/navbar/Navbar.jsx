@@ -1,12 +1,8 @@
-import styles from './Navbar.module.css';
 import { useState } from 'react';
-import DarkModeToggle from './darkMode/DarkModeToggle';
-import MobileMenu from './mobile/mobileMenu/MobileMenu';
-import MobileMenuButton from './mobile/mobileMenu/MobileMenuButton';
 import Logo from './logo/Logo';
 import NavbarItems from './navbarItems/NavbarItems';
 import Mobile from './mobile/Mobile';
-
+import styles from './Navbar.module.css';
 function Navbar({ theme, toggleTheme }) {
     const [activeTabName, setActiveTabName] = useState('');
     const [menuIsOpen, setMenuIsOpen] = useState(false);

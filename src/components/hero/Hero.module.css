@@ -124,94 +124,6 @@
     );
 }
 
-.heroMainText {
-    text-transform: uppercase;
-    color: var(--text-color);
-    font-size: 40px;
-    margin-top: 0.5rem;
-    font-family: 'Poppins';
-    margin-bottom: 0;
-}
-
-.name {
-    color: var(--text-color);
-    font-family: 'Mova';
-    font-size: 50px;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.heroSubText {
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 0.5rem;
-    font-family: 'Segoe UI Semibold';
-}
-
-.break {
-    display: none;
-}
-
-.divider {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-}
-
-.mouseyBoi {
-    position: absolute;
-    bottom: 3.5rem;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mouseyBoiContainer {
-    width: 35px;
-    height: 64px;
-    border-radius: 1.5rem;
-    border-width: 4px;
-    border-color: #b5b5ba;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding: 0.5rem;
-}
-
-.mouseLight {
-    background-color: #b5b5ba;
-}
-.mouseDark {
-    background-color: #9999a1;
-}
-
-.mouseMotion {
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 9999px;
-    background-color: var(--background-color);
-    margin-bottom: 0.25rem;
-    /* "w-3 h-3 rounded-full bg-taupe mb-1" */
-}
-
-@media screen and (min-width: 320px) {
-    .heroMainText {
-        font-size: 50px;
-    }
-
-    .heroSubText {
-        font-size: 20px;
-    }
-
-    .mouseyBoi {
-        bottom: 4rem;
-    }
-}
-
 @media screen and (min-width: 480px) {
     .bigMapImage {
         display: block;
@@ -227,51 +139,18 @@
 
     .mainSectionContainer {
         top: 250px;
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
-
-    .ball {
-        display: none;
-    }
-
-    .sceptre {
-        height: 20rem;
-        display: none;
+        padding-left: 2rem;
     }
 
     .lightModeOpacity {
         filter: contrast(0.6);
     }
+}
 
-    .heroMainText {
-        font-size: 60px;
-    }
-
-    .name {
-        color: rgb(164, 163, 163);
-        font-size: 90px;
-    }
-
-    .heroSubText {
-        font-size: 26px;
-    }
-
-    .break {
-        display: block;
-    }
-
-    .divider {
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        margin-left: 3rem;
-    }
-
-    .mouseyBoi {
-        bottom: 8rem;
+@media screen and (min-width: 640px) {
+    .mainSectionContainer {
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
 }
 
@@ -279,23 +158,6 @@
     .mainSectionContainer {
         top: 280px;
     }
-
-    .heroMainText {
-        font-size: 80px;
-        line-height: 90px;
-    }
-
-    .heroSubText {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .mouseyBoi {
-        bottom: 10rem;
-    }
 }
 @media screen and (min-width: 1800px) {
-    .mouseyBoi {
-        bottom: 4rem;
-    }
 }

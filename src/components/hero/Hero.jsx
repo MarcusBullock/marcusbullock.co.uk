@@ -1,8 +1,11 @@
-import { motion } from 'framer-motion';
 import BigMapImage from '../../assets/images/big-map.jpeg';
 import SmallMapImage from '../../assets/images/small-map.png';
 import * as classNames from 'classnames';
 import styles from './Hero.module.css';
+import MouseMotion from './mouseMotion/MouseMotion';
+import BallAndSceptre from './ballAndSceptre/BallAndSceptre';
+import Introduction from './introduction/Introduction';
+import Divider from './divider/Divider';
 
 function Hero({ theme }) {
     return (
@@ -42,64 +45,12 @@ function Hero({ theme }) {
                 )}
             >
                 <div className={styles.mainSectionContainer}>
-                    <div className={styles.ballAndSceptre}>
-                        <div
-                            className={classNames(
-                                styles.ball,
-                                theme === 'light'
-                                    ? styles.ballLight
-                                    : styles.ballDark
-                            )}
-                        ></div>
-                        <div
-                            className={classNames(
-                                styles.sceptre,
-                                theme === 'light'
-                                    ? styles.sceptreLight
-                                    : styles.sceptreDark
-                            )}
-                        ></div>
-                    </div>
-                    <div>
-                        <h1 className={styles.heroMainText}>
-                            Hi, I&apos;m{' '}
-                            <span className={styles.name}>Marcus</span>
-                        </h1>
-                        <p className={styles.heroSubText}>
-                            Software developer.
-                            <br />
-                            Full stack, backend, frontend, DB & devops.
-                        </p>
-                    </div>
-                    <div className={styles.divider}></div>
-                    <div></div>
+                    <BallAndSceptre theme={theme} />
+                    <Introduction theme={theme} />
+                    <Divider />
                 </div>
 
-                {/* {scrolly mouse animation} */}
-                <div className={styles.mouseyBoi}>
-                    <a href="#about">
-                        <div
-                            className={classNames(
-                                styles.mouseyBoiContainer,
-                                theme === 'light'
-                                    ? styles.mouseLight
-                                    : styles.mouseDark
-                            )}
-                        >
-                            <motion.div
-                                animate={{
-                                    y: [0, 24, 0],
-                                }}
-                                transition={{
-                                    duration: 1.5,
-                                    repeat: Infinity,
-                                    repeatType: 'loop',
-                                }}
-                                className={styles.mouseMotion}
-                            />
-                        </div>
-                    </a>
-                </div>
+                <MouseMotion theme={theme} />
             </section>
         </>
     );

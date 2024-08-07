@@ -1,0 +1,50 @@
+.ballAndSceptre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    margin-left: 0.75rem;
+}
+
+.ball {
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 9999px;
+}
+
+.ballLight {
+    background-color: var(--text-color);
+}
+
+.ballDark {
+    background: var(--text-color);
+}
+
+.sceptre {
+    width: 0.25rem;
+    height: 10rem;
+}
+
+.sceptreLight {
+    background: linear-gradient(
+        180deg,
+        var(--text-color) 40%,
+        rgba(212, 210, 210, 0) 70%
+    );
+}
+
+.sceptreDark {
+    background: linear-gradient(
+        180deg,
+        #ffffff 40%,
+        rgba(153, 153, 161, 0) 70%
+    );
+}
+
+@media screen and (min-width: 480px) {
+    .sceptre,
+    .ball {
+        display: none;
+    }
+}
