@@ -1,0 +1,29 @@
+.mobile {
+    display: flex;
+    flex: 1 1 0%;
+    width: 100vw;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    user-select: none;
+    gap: 10px;
+    margin-right: 36px;
+}
+
+@media screen and (min-width: 640px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .buttons {
+        display: none;
+    }
+}

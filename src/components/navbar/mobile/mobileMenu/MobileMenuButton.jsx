@@ -1,5 +1,5 @@
-import MenuLight from '../../../assets/images/mobile-menu-lightmode.png';
-import MenuDark from '../../../assets/images/mobile-menu-darkmode.png';
+import MenuLight from '../../../../assets/images/mobile-menu-lightmode.png';
+import MenuDark from '../../../../assets/images/mobile-menu-darkmode.png';
 import classNames from 'classnames';
 import styles from './MobileMenuButton.module.css';
 

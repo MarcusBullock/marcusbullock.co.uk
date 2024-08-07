@@ -3,18 +3,14 @@ import { faX } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames';
 import styles from './MobileMenu.module.css';
 import MobileMenuItem from './MobileMenuItem';
-import SelectedTabContext from '../../../context/SelectedTabContext';
-import { useContext } from 'react';
 
-function MobileMenu({ theme, isOpen, setMenuIsOpen }) {
-    // eslint-disable-next-line no-unused-vars
-    const { selectedTab, setSelectedTab } = useContext(SelectedTabContext);
+function MobileMenu({ theme, menuIsOpen, setActiveTabName, setMenuIsOpen }) {
     return (
         <div className={styles.menuContainer}>
             <ul
                 className={classNames(
                     styles.mobileMenu,
-                    isOpen ? styles.mobileMenuOpen : styles.mobileMenuClose
+                    menuIsOpen ? styles.mobileMenuOpen : styles.mobileMenuClose
                 )}
             >
                 <li>
@@ -33,17 +29,23 @@ function MobileMenu({ theme, isOpen, setMenuIsOpen }) {
                 <MobileMenuItem
                     title="ABOUT"
                     theme={theme}
-                    setSelectedTab={setSelectedTab}
+                    toggle={menuIsOpen}
+                    setToggle={setMenuIsOpen}
+                    setActive={setActiveTabName}
                 />
                 <MobileMenuItem
                     title="PROJECTS"
                     theme={theme}
-                    setSelectedTab={setSelectedTab}
+                    toggle={menuIsOpen}
+                    setToggle={setMenuIsOpen}
+                    setActive={setActiveTabName}
                 />
                 <MobileMenuItem
                     title="CONTACT"
                     theme={theme}
-                    setSelectedTab={setSelectedTab}
+                    toggle={menuIsOpen}
+                    setToggle={setMenuIsOpen}
+                    setActive={setActiveTabName}
                 />
             </ul>
         </div>

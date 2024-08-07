@@ -1,7 +1,7 @@
 import * as classNames from 'classnames';
 import styles from './MobileMenuItem.module.css';
 
-function MobileMenuItem({ title, setSelectedTab, theme }) {
+function MobileMenuItem({ title, setActive, toggle, setToggle, theme }) {
     return (
         <li
             className={classNames(
@@ -15,7 +15,8 @@ function MobileMenuItem({ title, setSelectedTab, theme }) {
 
     function handleClick(event) {
         event.preventDefault();
-        setSelectedTab();
+        setToggle(!toggle);
+        setActive(title);
     }
 }
 
