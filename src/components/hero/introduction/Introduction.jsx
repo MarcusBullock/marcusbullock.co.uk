@@ -1,5 +1,4 @@
 import AnimatedLetters from '../animatedLetters/AnimatedLetters';
-import classNames from 'classnames';
 import styles from './Introduction.module.css';
 
 function Introduction({ theme }) {
