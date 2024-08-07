@@ -1,0 +1,4 @@
+.animatedLetters {
+    display: flex;
+    flex-direction: row;
+}

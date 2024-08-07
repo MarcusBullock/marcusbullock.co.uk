@@ -4,7 +4,17 @@
     font-size: 40px;
     margin-top: 0.5rem;
     font-family: 'Poppins';
-    margin-bottom: 0;
+    margin-bottom: 1rem;
+    user-select: none;
+}
+
+.animatedIntro {
+    display: flex;
+    flex-direction: row;
+}
+
+.gap {
+    padding-left: 6px;
 }
 
 .name {
