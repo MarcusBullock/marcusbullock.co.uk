@@ -59,6 +59,19 @@ function Hero({ theme }) {
                             )}
                         ></div>
                     </div>
+                    <div>
+                        <h1 className={styles.heroMainText}>
+                            Hi, I&apos;m{' '}
+                            <span className={styles.name}>Marcus</span>
+                        </h1>
+                        <p className={styles.heroSubText}>
+                            Software developer.
+                            <br />
+                            Full stack, backend, frontend, DB & devops
+                        </p>
+                    </div>
+                    <div className={styles.divider}></div>
+                    <div></div>
                 </div>
             </section>
         </>

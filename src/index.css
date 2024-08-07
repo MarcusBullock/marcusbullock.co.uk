@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'SegoeUI';
+    src: url('../src/assets/fonts/SegoeUi.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .dark {
     --background-color: #121212;
     --text-color: #ffffff;
@@ -28,6 +35,8 @@ body {
     margin: 0;
     height: 100vh;
     scroll-behavior: smooth;
+    position: relative;
+    z-index: 0;
 }
 
 button {

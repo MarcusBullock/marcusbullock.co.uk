@@ -124,6 +124,53 @@
     );
 }
 
+.heroMainText {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 40px;
+    margin-top: 0.5rem;
+    font-family: 'Poppins';
+    margin-bottom: 0;
+}
+
+.name {
+    color: var(--text-color);
+    font-family: 'Mova';
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.heroSubText {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0.5rem;
+    font-family: 'Segoe UI Semibold';
+}
+
+.break {
+    display: none;
+}
+
+.divider {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+@media screen and (min-width: 320px) {
+    .heroMainText {
+        font-size: 50px;
+    }
+
+    .heroSubText {
+        font-size: 20px;
+    }
+}
+
 @media screen and (min-width: 480px) {
     .bigMapImage {
         display: block;
@@ -155,11 +202,47 @@
     .lightModeOpacity {
         filter: contrast(0.6);
     }
+
+    .heroMainText {
+        font-size: 60px;
+    }
+
+    .name {
+        color: rgb(164, 163, 163);
+        font-size: 90px;
+    }
+
+    .heroSubText {
+        font-size: 26px;
+    }
+
+    .break {
+        display: block;
+    }
+
+    .divider {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        margin-left: 3rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .mainSectionContainer {
         top: 150px;
+    }
+
+    .heroMainText {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+    .heroSubText {
+        font-size: 30px;
+        line-height: 40px;
     }
 }
 
