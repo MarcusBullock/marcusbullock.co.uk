@@ -13,6 +13,7 @@ function AnimatedLetters({
             {str.split('').map((char, index) => (
                 <motion.span
                     key={index}
+                    className={enableHoverEffect ? styles.animatedLetter : ''}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     whileHover={
