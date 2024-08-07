@@ -19,27 +19,18 @@ function Introduction({ theme }) {
                     />
                 </div>
             </h1>
-            <span
-                className={classNames(
-                    styles.name,
-                    theme === 'light' ? styles.nameLight : styles.nameDark
-                )}
-            >
+            <span className={styles.name}>
                 <AnimatedLetters
-                    color={`${
-                        theme === 'light'
-                            ? 'rgb(113, 111, 111)'
-                            : 'rgb(179, 177, 177)'
-                    }`}
+                    className={
+                        theme === 'light' ? styles.nameLight : styles.nameDark
+                    }
                     str="Marcus"
                     enableHoverEffect={true}
                 />
                 <AnimatedLetters
-                    color={`${
-                        theme === 'light'
-                            ? 'rgb(113, 111, 111)'
-                            : 'rgb(179, 177, 177)'
-                    }`}
+                    className={
+                        theme === 'light' ? styles.nameLight : styles.nameDark
+                    }
                     str="Bullock"
                     enableHoverEffect={true}
                 />

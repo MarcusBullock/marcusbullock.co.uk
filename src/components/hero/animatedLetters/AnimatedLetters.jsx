@@ -4,8 +4,6 @@ import * as classNames from 'classnames';
 
 function AnimatedLetters({
     str,
-    theme,
-    color,
     className,
     enableHoverEffect = false,
     speed = 10,
@@ -18,13 +16,6 @@ function AnimatedLetters({
                     className={enableHoverEffect ? styles.animatedLetter : ''}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    color={
-                        color != null
-                            ? color
-                            : theme === 'light'
-                            ? 'rgb(96, 94, 94)'
-                            : 'rgb(140, 137, 137)'
-                    }
                     whileHover={
                         enableHoverEffect
                             ? {

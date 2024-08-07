@@ -33,6 +33,14 @@
     font-family: 'Segoe UI Semibold';
 }
 
+.nameLight {
+    color: var(--text-color);
+}
+
+.nameDark {
+    color: var(--text-color);
+}
+
 @media screen and (min-width: 320px) {
     .introduction {
         font-size: 50px;
