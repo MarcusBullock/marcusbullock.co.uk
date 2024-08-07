@@ -1,8 +1,9 @@
-import Navbar from './components/navbar/Navbar';
-import * as classNames from 'classnames';
+//import Navbar from './components/navbar/Navbar';
 import styles from './index.css?inline';
 import { useEffect, useState } from 'react';
 import Hero from './components/hero/Hero';
+import Navbar from './components/navbar/Navbar';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
     const [theme, setTheme] = useState('light');
@@ -23,12 +24,15 @@ function App() {
     };
 
     return (
-        <div className={classNames(`App ${theme}`, styles.container)}>
-            <Navbar toggleTheme={toggleTheme} theme={theme} />
-            <main>
-                <Hero theme={theme} />
-            </main>
-        </div>
+        <BrowserRouter>
+            <div className={`App ${theme}`}>
+                {/* <Navbar toggleTheme={toggleTheme} theme={theme} /> */}
+                <Navbar toggleTheme={toggleTheme} theme={theme} />
+                <main>
+                    <Hero theme={theme} />
+                </main>
+            </div>
+        </BrowserRouter>
     );
 }
 

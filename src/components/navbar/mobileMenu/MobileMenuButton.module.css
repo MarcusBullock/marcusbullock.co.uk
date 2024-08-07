@@ -1,14 +1,14 @@
-.menu {
+.menuButton {
     text-align: end;
     width: 34px;
     height: 34px;
-    padding: 13px;
+    padding: 8px 10px;
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
-.menu:hover {
+.menuButton:hover {
     animation: shake 3s infinite;
     border-radius: 50%;
 }

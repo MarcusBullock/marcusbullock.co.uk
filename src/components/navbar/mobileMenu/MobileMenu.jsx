@@ -7,13 +7,14 @@ import SelectedTabContext from '../../../context/SelectedTabContext';
 import { useContext } from 'react';
 
 function MobileMenu({ theme, isOpen, setMenuIsOpen }) {
+    // eslint-disable-next-line no-unused-vars
     const { selectedTab, setSelectedTab } = useContext(SelectedTabContext);
     return (
         <div className={styles.menuContainer}>
             <ul
                 className={classNames(
                     styles.mobileMenu,
-                    isOpen ? styles.active : ''
+                    isOpen ? styles.mobileMenuOpen : styles.mobileMenuClose
                 )}
             >
                 <li>

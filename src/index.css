@@ -64,29 +64,22 @@ button:hover {
     box-sizing: border-box;
 }
 
-@media (min-width: 576px) {
-    .container {
-        padding: 1.5rem;
-    }
+#about {
+    margin-left: -24px;
+    font-size: 100px;
 }
 
-@media (min-width: 638px) {
-    .container {
-        padding: 2rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+#projects {
+    margin-left: -2px;
+    font-size: 100px;
 }
 
-@media (min-width: 992px) {
-    .container {
-        padding: 2.5rem;
-    }
+#contact {
+    margin-left: -20px;
+    font-size: 95px;
+    letter-spacing: -2px;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        padding: 3rem;
-    }
+a {
+    color: unset;
 }

@@ -67,7 +67,7 @@ function Hero({ theme }) {
                         <p className={styles.heroSubText}>
                             Software developer.
                             <br />
-                            Full stack, backend, frontend, DB & devops
+                            Full stack, backend, frontend, DB & devops.
                         </p>
                     </div>
                     <div className={styles.divider}></div>

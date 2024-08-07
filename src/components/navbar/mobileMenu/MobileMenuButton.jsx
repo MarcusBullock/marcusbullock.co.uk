@@ -7,7 +7,7 @@ function MobileMenuButton({ theme, menuIsOpen, setMenuIsOpen }) {
     return (
         <a
             className={classNames(
-                styles.menu,
+                styles.menuButton,
                 theme === 'light' ? styles.lightHover : styles.darkHover
             )}
             onClick={() => setMenuIsOpen(!menuIsOpen)}
