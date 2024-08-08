@@ -50,9 +50,8 @@ function Hero({ theme }) {
                     <Introduction theme={theme} />
                     <Divider />
                 </div>
-
                 <MouseMotion theme={theme} />
-                <Portrait sillyMode={true} />
+                <Portrait sillyMode={false} />
             </section>
         </>
     );

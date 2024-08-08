@@ -108,3 +108,12 @@ a {
 .about {
     background-color: var(--background-color);
 }
+
+.card-gradient {
+    background: rgb(244, 244, 246);
+    background: linear-gradient(
+        158deg,
+        rgba(153, 153, 161, 1) 25%,
+        rgba(153, 153, 161, 1) 100%
+    );
+}

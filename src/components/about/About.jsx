@@ -3,9 +3,11 @@ import { fadeIn, textVariant } from '../../utils/motion';
 import styles from './About.module.css';
 import SectionWrapper from '../../hoc/SectionWrapper';
 import classNames from 'classnames';
+import { skills } from '../../constants/constants';
+import AboutCard from './aboutCard/AboutCard';
 
 const About = ({ theme }) => {
-    const color = theme === 'light' ? '#717171' : '#b5b5b7';
+    const color = theme === 'light' ? '#8d8c8c' : '#b5b5b7';
     return (
         <div className={styles.about}>
             <motion.div variants={textVariant()}>
@@ -20,12 +22,27 @@ const About = ({ theme }) => {
                 className={classNames(styles.motionP)}
             >
                 A senior software developer with more than 10 years experience
-                at industry leading companes in the finance, trading and travel
-                industries. I&apos;ve worked in corporate as well as startup
-                environments, leading complex projects from start to finish,
-                from database and backend work, to UI design and execution, as
-                well as architectural design and devops.
+                at industry leading companies in the finance, trading and travel
+                sectors.
+                <br />
+                <br />
+                I&apos;ve worked in corporate as well as startup environments,
+                leading complex projects from start to finish, covering all
+                aspects of the software delivery process - from database &
+                backend, to UI design & execution, as well as architectural
+                design & devops.
             </motion.p>
+
+            <div className={styles.cards}>
+                {skills.map((skill, index) => (
+                    <AboutCard
+                        key={skill.title}
+                        icon={skill.icon}
+                        index={index}
+                        {...skill}
+                    />
+                ))}
+            </div>
         </div>
     );
 };

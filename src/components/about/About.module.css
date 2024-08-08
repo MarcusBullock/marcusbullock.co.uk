@@ -27,6 +27,13 @@
     font-family: 'Droid Sans';
 }
 
+.cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
 @media screen and (min-width: 320px) {
     .header2 {
         font-size: 40px;

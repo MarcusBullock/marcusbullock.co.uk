@@ -29,7 +29,7 @@
     color: #9999a1;
 }
 
-li:nth-last-child(1) {
+.navbarItems li:nth-last-child(1) {
     margin-right: 36px;
     margin-bottom: 14px;
 }

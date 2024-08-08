@@ -2,28 +2,28 @@
     position: absolute;
     bottom: 0;
     height: 40vh;
-    left: 11vh;
+    left: 18vh;
     user-select: none;
 }
 
 @media screen and (min-width: 345px) {
     .portrait {
         height: 45vh;
-        left: 11vh;
+        left: 16vh;
     }
 }
 
 @media screen and (min-width: 400px) {
     .portrait {
         height: 50vh;
-        left: 15vh;
+        left: 20vh;
     }
 }
 
 @media screen and (min-width: 480px) {
     .portrait {
         height: 50vh;
-        left: 20vh;
+        left: 22vh;
     }
 }
 

@@ -1,4 +1,5 @@
 import AnimatedLetters from '../animatedLetters/AnimatedLetters';
+import CvButton from '../cvButton/CvButton';
 import styles from './Introduction.module.css';
 
 function Introduction({ theme }) {
@@ -46,9 +47,10 @@ function Introduction({ theme }) {
                 />
                 <AnimatedLetters
                     theme={theme}
-                    stringToAnimate="DB & dev ops."
+                    stringToAnimate="DB & dev-ops."
                 />
             </p>
+            <CvButton theme={theme} />
         </div>
     );
 }

@@ -1,6 +1,84 @@
 .cvButton {
-    width: 200px;
-    height: 100px;
+    height: 35px;
     border-radius: 15px;
-    background-color: var(--text-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    user-select: none;
+    font-size: 16px;
+    font-family: 'Mova';
+}
+
+.cvButtonLightMode {
+    background-color: #948c8c;
+    color: #ffffff;
+}
+
+.cvButtonDarkMode {
+    background-color: #252222;
+    color: #e5e2e2;
+}
+
+.widthClicked {
+    width: 220px;
+}
+
+.widthNotClicked {
+    width: 220px;
+}
+
+.links {
+    text-decoration: none;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.75;
+}
+
+.disabledDark {
+    opacity: 0.65;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+@media screen and (min-width: 320px) {
+    .cvButton {
+        height: 40px;
+        border-radius: 25px;
+        font-size: 19px;
+        font-family: 'Mova';
+    }
+    .widthClicked {
+        width: 270px;
+    }
+
+    .widthNotClicked {
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 370px) {
+    .cvButton {
+        height: 50px;
+        border-radius: 25px;
+        font-size: 22px;
+        font-family: 'Mova';
+    }
+    .widthClicked {
+        width: 310px;
+    }
+
+    .widthNotClicked {
+        width: 290px;
+    }
+
+    .links {
+        padding: 0 20px;
+    }
 }
