@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import styles from './AnimatedLetters.module.css';
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 
 function AnimatedLetters({
     stringToAnimate,

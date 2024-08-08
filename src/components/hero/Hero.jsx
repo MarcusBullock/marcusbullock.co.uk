@@ -1,11 +1,12 @@
 import BigMapImage from '../../assets/images/big-map.jpeg';
 import SmallMapImage from '../../assets/images/small-map.png';
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import styles from './Hero.module.css';
 import MouseMotion from './mouseMotion/MouseMotion';
 import BallAndSceptre from './ballAndSceptre/BallAndSceptre';
 import Introduction from './introduction/Introduction';
 import Divider from './divider/Divider';
+import Portrait from './portrait/Portrait';
 
 function Hero({ theme }) {
     return (
@@ -51,6 +52,7 @@ function Hero({ theme }) {
                 </div>
 
                 <MouseMotion theme={theme} />
+                <Portrait sillyMode={false} />
             </section>
         </>
     );

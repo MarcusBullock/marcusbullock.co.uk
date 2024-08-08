@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import styles from './MouseMotion.module.css';
 
 function MouseMotion({ theme }) {

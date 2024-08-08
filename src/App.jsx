@@ -6,8 +6,6 @@ import { useState } from 'react';
 
 function App() {
     const [theme, setTheme] = useState('light');
-    console.log('APP THEME ->' + ' ' + theme);
-
     return (
         <BrowserRouter>
             <div className={`App ${theme}`}>

@@ -1,0 +1,125 @@
+.portrait {
+    position: absolute;
+    bottom: 0;
+    height: 40vh;
+    left: 11vh;
+}
+
+@media screen and (min-width: 345px) {
+    .portrait {
+        height: 45vh;
+        left: 11vh;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .portrait {
+        height: 50vh;
+        left: 15vh;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .portrait {
+        height: 50vh;
+        left: 20vh;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .portrait {
+        height: 55vh;
+        left: 27vh;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .portrait {
+        height: 55vh;
+        left: 32vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portrait {
+        height: 60vh;
+        left: 44vh;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .portrait {
+        height: 65vh;
+        left: 52vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portrait {
+        height: 70vh;
+        left: 62vh;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .portrait {
+        height: 75vh;
+        left: 72vh;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .portrait {
+        height: 80vh;
+        left: 82vh;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .portrait {
+        height: 80vh;
+        left: 92vh;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .portrait {
+        height: 80vh;
+        left: 102vh;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .portrait {
+        height: 80vh;
+        left: 112vh;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .portrait {
+        height: 80vh;
+        left: 122vh;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .portrait {
+        height: 80vh;
+        left: 132vh;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .portrait {
+        height: 80vh;
+        left: 152vh;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .portrait {
+        height: 80vh;
+        left: 162vh;
+    }
+}

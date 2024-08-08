@@ -1,5 +1,5 @@
 import DarkModeToggle from '../darkMode/DarkModeToggle';
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import styles from './NavbarItems.module.css';
 import NavbarItem from './navbarItem/NavbarItem';
 

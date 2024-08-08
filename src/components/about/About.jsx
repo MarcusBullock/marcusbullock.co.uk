@@ -2,10 +2,9 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../../utils/motion';
 import styles from './About.module.css';
 import SectionWrapper from '../../hoc/SectionWrapper';
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 
 const About = ({ theme }) => {
-    console.log('ABOUT THEME --> ' + ' ' + theme);
     const color = theme === 'light' ? '#717171' : '#b5b5b7';
     return (
         <div className={styles.about}>
@@ -20,13 +19,12 @@ const About = ({ theme }) => {
                 variants={fadeIn('', '', 0.1, 1)}
                 className={classNames(styles.motionP)}
             >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Debitis sapiente ipsum dolorum dicta eaque cumque inventore
-                molestias, beatae ea quaerat alias accusamus voluptas autem!
-                Alias odit voluptates in totam vitae dignissimos minus eaque
-                culpa unde tempore dolore aperiam obcaecati voluptatum aliquam
-                corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum
-                doloribus.
+                A senior software developer with more than 10 years experience
+                at industry leading companes in the finance, trading and travel
+                industries. I&apos;ve worked in corporate as well as startup
+                environments, leading complex projects from start to finish,
+                from database and backend work, to UI design and execution, as
+                well as architectural design and devops.
             </motion.p>
         </div>
     );

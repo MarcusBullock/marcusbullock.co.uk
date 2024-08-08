@@ -1,4 +1,4 @@
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import styles from './MobileMenuItem.module.css';
 
 function MobileMenuItem({ title, setActive, toggle, setToggle, theme }) {

@@ -1,4 +1,4 @@
-import * as classNames from 'classnames';
+import classNames from 'classnames';
 import styles from './DarkModeToggle.module.css';
 import Sun from '../../../assets/images/sun.svg';
 import Moon from '../../../assets/images/moon.svg';
