@@ -8,39 +8,46 @@ function Introduction({ theme }) {
                 <div className={styles.animatedIntro}>
                     <AnimatedLetters
                         theme={theme}
-                        str="Hi,"
+                        stringToAnimate="Hi,"
                         enableHoverEffect={true}
                     />
                     <AnimatedLetters
+                        theme={theme}
                         className={styles.gap}
-                        str="I'm"
+                        stringToAnimate="I'm"
                         enableHoverEffect={true}
                     />
                 </div>
             </h1>
             <span className={styles.name}>
                 <AnimatedLetters
-                    className={
-                        theme === 'light' ? styles.nameLight : styles.nameDark
-                    }
-                    str="Marcus"
+                    theme={theme}
+                    overrideColor={theme === 'light' ? '#858585' : '#9d9b9b'}
+                    stringToAnimate="Marcus"
                     enableHoverEffect={true}
                 />
                 <AnimatedLetters
-                    className={
-                        theme === 'light' ? styles.nameLight : styles.nameDark
-                    }
-                    str="Bullock"
+                    theme={theme}
+                    overrideColor={theme === 'light' ? '#858585' : '#9d9b9b'}
+                    stringToAnimate="Bullock"
                     enableHoverEffect={true}
                 />
             </span>
             <p className={styles.heroSubText}>
-                <AnimatedLetters str="Software developer." speed={15} />
                 <AnimatedLetters
-                    str="Full stack, backend, frontend,"
+                    theme={theme}
+                    stringToAnimate="Software developer."
+                    speed={15}
+                />
+                <AnimatedLetters
+                    theme={theme}
+                    stringToAnimate="Full stack, backend, frontend,"
                     speed={20}
                 />
-                <AnimatedLetters str="DB & dev ops." />
+                <AnimatedLetters
+                    theme={theme}
+                    stringToAnimate="DB & dev ops."
+                />
             </p>
         </div>
     );

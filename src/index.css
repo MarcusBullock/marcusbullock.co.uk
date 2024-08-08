@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Droid Sans';
+    src: url('../src/assets/fonts/DroidSans.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .dark {
     --background-color: #121212;
     --text-color: #ffffff;
@@ -26,6 +33,10 @@
     --button-text-color: #ffffff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 main,
 body {
     background-color: var(--background-color);
@@ -34,9 +45,19 @@ body {
     padding: 0;
     margin: 0;
     height: 100vh;
-    scroll-behavior: smooth;
     position: relative;
     z-index: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+    background-color: #383838; /* or add it to the track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #b8b7b7;
+    border-radius: 5px;
 }
 
 button {
@@ -82,4 +103,8 @@ button:hover {
 
 a {
     color: unset;
+}
+
+.about {
+    background-color: var(--background-color);
 }

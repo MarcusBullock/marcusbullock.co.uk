@@ -3,19 +3,24 @@ import styles from './AnimatedLetters.module.css';
 import * as classNames from 'classnames';
 
 function AnimatedLetters({
-    str,
+    stringToAnimate,
+    overrideColor,
+    theme,
     className,
     enableHoverEffect = false,
     speed = 10,
 }) {
+    let color = overrideColor;
+    if (color == null) color = theme === 'light' ? '#121212' : '#f9f7f7';
+
     return (
         <span className={classNames(styles.animatedLetters, className)}>
-            {str.split('').map((char, index) => (
+            {stringToAnimate.split('').map((char, index) => (
                 <motion.span
                     key={index}
                     className={enableHoverEffect ? styles.animatedLetter : ''}
                     initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
+                    animate={{ opacity: 1, color: color }}
                     whileHover={
                         enableHoverEffect
                             ? {

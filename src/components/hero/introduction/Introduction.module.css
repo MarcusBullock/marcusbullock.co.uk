@@ -18,11 +18,11 @@
 }
 
 .name {
-    color: var(--text-color);
     font-family: 'Mova';
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase;
+    user-select: none;
 }
 
 .heroSubText {
@@ -31,14 +31,7 @@
     font-size: 16px;
     margin-top: 0.5rem;
     font-family: 'Segoe UI Semibold';
-}
-
-.nameLight {
-    color: var(--text-color);
-}
-
-.nameDark {
-    color: var(--text-color);
+    user-select: none;
 }
 
 @media screen and (min-width: 320px) {
@@ -57,16 +50,7 @@
     }
 
     .name {
-        color: rgb(126, 124, 124);
         font-size: 90px;
-    }
-
-    .nameLight {
-        color: rgb(126, 124, 124);
-    }
-
-    .nameDark {
-        color: rgb(179, 177, 177);
     }
 
     .heroSubText {

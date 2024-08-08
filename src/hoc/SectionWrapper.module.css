@@ -1,0 +1,19 @@
+.sectionWrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    position: relative;
+    z-index: 0;
+}
+
+.hash-span {
+    margin-top: -100px;
+    padding-bottom: 100px;
+    display: block;
+}
+
+@media screen and (min-width: 480px) {
+    .sectionWrapper {
+        padding: 4rem;
+    }
+}
