@@ -3,6 +3,7 @@
     bottom: 0;
     height: 40vh;
     left: 11vh;
+    user-select: none;
 }
 
 @media screen and (min-width: 345px) {

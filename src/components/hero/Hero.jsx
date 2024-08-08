@@ -52,7 +52,7 @@ function Hero({ theme }) {
                 </div>
 
                 <MouseMotion theme={theme} />
-                <Portrait sillyMode={false} />
+                <Portrait sillyMode={true} />
             </section>
         </>
     );

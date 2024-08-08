@@ -1,0 +1,6 @@
+.cvButton {
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: var(--text-color);
+}
