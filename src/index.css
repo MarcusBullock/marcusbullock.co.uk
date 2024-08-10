@@ -73,6 +73,19 @@ button:hover {
     opacity: 0.8;
 }
 
+a {
+    color: unset;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -101,12 +114,16 @@ button:hover {
     letter-spacing: -2px;
 }
 
-a {
-    color: unset;
-}
-
+.tech,
 .about {
     background-color: var(--background-color);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tech {
+    padding-bottom: 2.5rem;
 }
 
 .card-gradient {
@@ -116,4 +133,18 @@ a {
         rgba(153, 153, 161, 1) 25%,
         rgba(153, 153, 161, 1) 100%
     );
+}
+
+.App {
+    position: relative;
+}
+
+.imageLight {
+    background-image: url('./assets/images/london.jpg');
+    background-blend-mode: luminosity;
+}
+
+.imageDark {
+    background-image: url('./assets/images/london-dark.jpg');
+    background-blend-mode: luminosity;
 }

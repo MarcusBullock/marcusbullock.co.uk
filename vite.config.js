@@ -1,14 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import eslint from 'vite-plugin-eslint';
+import svgr from 'vite-plugin-svgr';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [react(), eslint()],
+    plugins: [react(), eslint(), svgr()],
     css: {
         modules: {
-            generateScopedName: '[name]_[local]_[hash:base64:5]', // Customize class naming
-            localsConvention: '', // Use camelCase for class names
+            generateScopedName: '[name]_[local]_[hash:base64:7]',
         },
     },
 });

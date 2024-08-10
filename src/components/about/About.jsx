@@ -23,22 +23,20 @@ const About = ({ theme }) => {
             >
                 A senior software developer with more than 10 years experience
                 at industry leading companies in the finance, trading and travel
-                sectors.
-                <br />
-                <br />
-                I&apos;ve worked in corporate as well as startup environments,
-                leading complex projects from start to finish, covering all
-                aspects of the software delivery process - from database &
-                backend, to UI design & execution, as well as architectural
-                design & devops.
+                sectors. I&apos;ve worked in corporate as well as startup
+                environments, leading complex projects from start to finish,
+                covering all aspects of the software delivery process - from
+                database & backend, to UI design & execution, as well as
+                architectural design & devops.
             </motion.p>
 
             <div className={styles.cards}>
                 {skills.map((skill, index) => (
                     <AboutCard
+                        IconComponent={skill.icon}
                         key={skill.title}
-                        icon={skill.icon}
                         index={index}
+                        theme={theme}
                         {...skill}
                     />
                 ))}

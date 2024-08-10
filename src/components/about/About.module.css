@@ -55,3 +55,11 @@
         font-size: 60px;
     }
 }
+
+@media screen and (max-width: 960px) {
+    .cards {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

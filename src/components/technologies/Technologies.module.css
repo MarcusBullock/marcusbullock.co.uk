@@ -1,0 +1,62 @@
+.technologies {
+    max-width: 80rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    padding: 0;
+
+    -webkit-filter: grayscale(1%) !important; /* Safari 6.0 - 9.0 */
+    filter: grayscale(1%) !important;
+}
+
+.header {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    margin: 0;
+    font-family: 'Poppins';
+    color: #959494;
+}
+
+.header2 {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.balls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3.5rem;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+    .header2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 748px) {
+    .header {
+        font-size: 18px;
+    }
+
+    .header2 {
+        font-size: 48px;
+    }
+
+    .technologies {
+        padding: 4rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .header2 {
+        font-size: 60px;
+    }
+}
