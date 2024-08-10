@@ -67,11 +67,23 @@ const technologies = [
         icon: DotNet,
     },
     {
-        name: 'React',
+        name: 'Blazor',
+        icon: Blazor,
+    },
+    {
+        name: 'ASP.NET',
+        icon: Asp,
+    },
+    {
+        name: 'SQL Server',
+        icon: Sql,
+    },
+    {
+        name: 'React JS',
         icon: React,
     },
     {
-        name: 'Redux',
+        name: 'Redux JS',
         icon: Redux,
     },
     {
@@ -81,18 +93,6 @@ const technologies = [
     {
         name: 'Typescript',
         icon: Typescript,
-    },
-    {
-        name: 'SQL',
-        icon: Sql,
-    },
-    {
-        name: 'Blazor',
-        icon: Blazor,
-    },
-    {
-        name: 'ASP.NET',
-        icon: Asp,
     },
     {
         name: 'CSS',
@@ -111,7 +111,7 @@ const technologies = [
         icon: Elastic,
     },
     {
-        name: 'Postgres',
+        name: 'Postgresql',
         icon: Postgres,
     },
     {

@@ -140,11 +140,21 @@ p {
 }
 
 .imageLight {
-    background-image: url('./assets/images/london.jpg');
+    background-image: linear-gradient(
+            165deg,
+            rgba(255, 255, 255, 0.7) 100%,
+            rgba(109, 109, 116, 0.8) 100%
+        ),
+        url('./assets/images/london.jpg');
     background-blend-mode: luminosity;
 }
 
 .imageDark {
-    background-image: url('./assets/images/london-dark.jpg');
+    background-image: linear-gradient(
+            165deg,
+            rgba(20, 20, 20, 0.85) 100%,
+            rgba(109, 109, 116, 0.95) 100%
+        ),
+        url('./assets/images/london.jpg');
     background-blend-mode: luminosity;
 }

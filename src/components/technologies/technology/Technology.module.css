@@ -1,4 +1,32 @@
 .technology {
-    width: 12rem;
-    height: 12rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.ball {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Oxanium';
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+}
+
+.light {
+    color: #332d2d;
+}
+
+.dark {
+    color: #e0dfdf;
 }

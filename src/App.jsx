@@ -22,7 +22,7 @@ function App() {
                             theme === 'light' ? 'imageLight' : 'imageDark'
                         }`}
                     >
-                        <Technologies />
+                        <Technologies theme={theme} />
                     </div>
                 </div>
             </main>
