@@ -17,7 +17,7 @@ function App() {
                         <Navbar toggleTheme={toggleTheme} theme={theme} />
                         <Hero theme={theme} />
                     </div>
-                    <div className="about">
+                    <div className="about" id="about">
                         <About theme={theme} />
                         <Cards skills={skills} />
                     </div>
