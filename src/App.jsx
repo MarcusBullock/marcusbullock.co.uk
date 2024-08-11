@@ -4,6 +4,8 @@ import Navbar from './components/navbar/Navbar';
 import About from './components/about/About';
 import { useState } from 'react';
 import Technologies from './components/technologies/Technologies';
+import Cards from './components/about/cards/Cards';
+import { skills } from './constants/constants';
 
 function App() {
     const [theme, setTheme] = useState('light');
@@ -11,10 +13,13 @@ function App() {
         <BrowserRouter>
             <main>
                 <div className={`App ${theme}`}>
-                    <Navbar toggleTheme={toggleTheme} theme={theme} />
-                    <Hero theme={theme} />
+                    <div>
+                        <Navbar toggleTheme={toggleTheme} theme={theme} />
+                        <Hero theme={theme} />
+                    </div>
                     <div className="about">
                         <About theme={theme} />
+                        <Cards skills={skills} />
                     </div>
 
                     <div

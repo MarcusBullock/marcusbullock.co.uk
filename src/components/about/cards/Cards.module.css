@@ -1,0 +1,21 @@
+.cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin: 0 auto;
+}
+
+.cardsContainer {
+    max-width: 80rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+
+@media screen and (max-width: 874px) {
+    .cards {
+        justify-content: center;
+    }
+}

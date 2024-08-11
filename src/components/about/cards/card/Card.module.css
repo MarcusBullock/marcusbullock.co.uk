@@ -1,11 +1,8 @@
-.aboutCard {
-    width: 90%;
+.card {
+    width: 100vw;
     padding: 1px;
     border-radius: 20px;
-    color: #eeeeee;
-    transition: box-shadow 0.3s ease;
 }
-
 .lightShadow {
     box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1), 5px 8px 8px rgba(0, 0, 0, 0.1),
         10px 12px 16px rgba(0, 0, 0, 0.1);
@@ -17,7 +14,7 @@
         10px 12px 16px rgba(255, 255, 255, 0.1);
 }
 
-.aboutCardContainer {
+.egg {
     border-radius: 20px;
     padding: 1.25rem 3rem;
     min-height: 280px;
@@ -25,28 +22,26 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+
+    /* bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col */
 }
 
-.aboutImg {
-    width: 7rem;
-    height: 7rem;
+.eggImage {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    /* w-16 h-16 object-contain */
 }
 
-.aboutTitle {
+.eggTitle {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Droid Sans';
+    /* "text-taupe text-[18px] font-bold text-center" */
 }
-
-@media screen and (min-width: 380px) {
-    .aboutCard {
-        width: 285px;
-    }
-}
-
 @media screen and (min-width: 480px) {
-    .aboutCard {
+    .card {
         width: 250px;
     }
 }

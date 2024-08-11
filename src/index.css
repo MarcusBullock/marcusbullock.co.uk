@@ -114,16 +114,19 @@ p {
     letter-spacing: -2px;
 }
 
+.about {
+}
+
 .tech,
 .about {
     background-color: var(--background-color);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .tech {
     padding-bottom: 2.5rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .card-gradient {

@@ -24,36 +24,44 @@ import Css from '../assets/images/tech/css.png';
 
 const skills = [
     {
-        title: 'Backend Developer',
+        title: 'Backend',
         icon: Backend,
+        color: '#908484',
     },
     {
         title: 'Database',
         icon: Database,
+        color: '#718963',
     },
     {
-        title: 'Frontend Developer',
+        title: 'Frontend',
         icon: Frontend,
+        color: '#a9ab8a',
     },
     {
         title: 'Architecture',
         icon: Architecture,
+        color: '#6e7e7a',
     },
     {
         title: 'Design',
         icon: Design,
+        color: '#6c7381',
     },
     {
         title: 'Devops',
         icon: Devops,
+        color: '#cbbea7',
     },
     {
         title: 'AWS & Serverless',
         icon: Serverless,
+        color: '#6e6666',
     },
     {
         title: 'Mentor & Leader',
         icon: Leadership,
+        color: '#776979',
     },
 ];
 
