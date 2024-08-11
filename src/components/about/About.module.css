@@ -1,40 +1,12 @@
-.egg2 {
+.about {
     max-width: 80rem;
     margin: 0 auto;
     position: relative;
     z-index: 0;
     color: var(--text-color);
-    /* xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card" */
+    margin-top: -6rem;
 }
 
-.egg {
-    border-radius: 20px;
-    padding: 1.25rem 3rem;
-    min-height: 280px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-
-    /* bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col */
-}
-
-.eggImage {
-    width: 4rem;
-    height: 4rem;
-    object-fit: contain;
-    /* w-16 h-16 object-contain */
-}
-
-.eggTitle {
-    font-size: 18px;
-    font-weight: 800;
-    text-align: center;
-    font-family: 'Droid Sans';
-    text-transform: uppercase;
-    color: var(--text-color);
-    /* "text-taupe text-[18px] font-bold text-center" */
-}
 .header {
     font-size: 16px;
     text-transform: uppercase;
@@ -54,40 +26,11 @@
     color: var(--text-color);
 }
 
-.egg2 {
-    margin-top: -6rem;
-}
-
-.egg2Motion {
+.aboutMotion {
     margin-top: 1rem;
     font-size: 18px;
     max-width: 48rem;
     line-height: 30px;
     font-family: 'Segoe UI';
     font-weight: 400;
-}
-
-.egg2Cards {
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-}
-
-.lightShadow {
-    box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1), 5px 8px 8px rgba(0, 0, 0, 0.1),
-        10px 12px 16px rgba(0, 0, 0, 0.1);
-}
-
-.darkShadow {
-    box-shadow: 2px 4px 3px rgba(255, 255, 255, 0.1),
-        5px 8px 8px rgba(255, 255, 255, 0.1),
-        10px 12px 16px rgba(255, 255, 255, 0.1);
-}
-
-@media screen and (min-width: 480px) {
-    .about2 {
-        width: 250px;
-    }
 }

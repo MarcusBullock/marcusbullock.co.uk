@@ -5,7 +5,7 @@ import SectionWrapper from './../../hoc/SectionWrapper';
 
 const About = () => {
     return (
-        <div className={styles.egg2}>
+        <div className={styles.about}>
             <motion.div variants={textVariant()}>
                 <p className={styles.header}>Introduction</p>
                 <h2 className={styles.header2}>Overview.</h2>
@@ -13,7 +13,7 @@ const About = () => {
 
             <motion.p
                 variants={fadeIn('', '', 0.1, 1)}
-                className={styles.egg2Motion}
+                className={styles.aboutMotion}
             >
                 A senior software developer with more than 10 years experience
                 at industry leading companies in the finance, trading and travel

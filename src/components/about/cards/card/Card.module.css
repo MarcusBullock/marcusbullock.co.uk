@@ -14,7 +14,7 @@
         10px 12px 16px rgba(255, 255, 255, 0.1);
 }
 
-.egg {
+.cardContainer {
     border-radius: 20px;
     padding: 1.25rem 3rem;
     min-height: 280px;
@@ -22,24 +22,21 @@
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-
-    /* bg-jetLight rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col */
 }
 
-.eggImage {
+.cardImage {
     width: 4rem;
     height: 4rem;
     object-fit: contain;
-    /* w-16 h-16 object-contain */
 }
 
-.eggTitle {
+.cardTitle {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     font-family: 'Droid Sans';
-    /* "text-taupe text-[18px] font-bold text-center" */
 }
+
 @media screen and (min-width: 480px) {
     .card {
         width: 250px;

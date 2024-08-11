@@ -7,20 +7,20 @@ function Card({ index, title, color, theme, IconComponent }) {
     const svgColor = '#eeeeee';
     return (
         <motion.div
-            variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+            variants={fadeIn('right', 'spring', 0.5 * index, 0.5)}
             className={classNames(
                 styles.card,
                 theme === 'light' ? styles.lightShadow : styles.darkShadow
             )}
             style={{ backgroundColor: color }}
         >
-            <div className={styles.egg}>
+            <div className={styles.cardContainer}>
                 <IconComponent
                     alt={title}
                     fill={svgColor}
-                    className={styles.eggImage}
+                    className={styles.cardImage}
                 />
-                <h3 className={styles.eggTitle} style={{ color: svgColor }}>
+                <h3 className={styles.cardTitle} style={{ color: svgColor }}>
                     {title}
                 </h3>
             </div>
