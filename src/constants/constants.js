@@ -128,4 +128,16 @@ const technologies = [
     },
 ];
 
-export { skills, technologies };
+const projects = [
+    {
+        name: "Fatboy's Pizza",
+    },
+    {
+        name: 'Wayfarer',
+    },
+    {
+        name: 'The Hotel Company',
+    },
+];
+
+export { skills, technologies, projects };

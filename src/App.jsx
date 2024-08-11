@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Technologies from './components/technologies/Technologies';
 import Cards from './components/about/cards/Cards';
 import { skills } from './constants/constants';
+import Projects from './components/projects/Projects';
 
 function App() {
     const [theme, setTheme] = useState('light');
@@ -29,6 +30,8 @@ function App() {
                     >
                         <Technologies theme={theme} />
                     </div>
+
+                    <Projects />
                 </div>
             </main>
         </BrowserRouter>
