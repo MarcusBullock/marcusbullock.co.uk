@@ -7,6 +7,10 @@
     font-family: 'Mova';
 }
 
+.cvButton:active {
+    border: 1px solid green;
+}
+
 .cvButtonLightMode {
     background-color: #948c8c;
     color: #ffffff;
@@ -18,6 +22,7 @@
 }
 
 .widthClicked {
+    border: 1px solid green;
     width: 220px;
 }
 

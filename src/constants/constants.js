@@ -16,40 +16,45 @@ import Sql from '../assets/images/tech/sql.png';
 import Blazor from '../assets/images/tech/blazor.png';
 import Asp from '../assets/images/tech/aspdotnet.png';
 import Aws from '../assets/images/tech/aws.png';
+import Node from '../assets/images/tech/node.png';
 import Azure from '../assets/images/tech/azure.png';
 import Elastic from '../assets/images/tech/elastic.png';
 import Postgres from '../assets/images/tech/postgresql.png';
 import Git from '../assets/images/tech/git.png';
 import Css from '../assets/images/tech/css.png';
+import Wayfarer from '../assets/images/projects/wayfarer.png';
+import TheHotelCo from '../assets/images/projects/thehotelcompany.png';
+import TheHotelCoLight from '../assets/images/projects/hotelcompany-light.png';
+import Pizza from '../assets/images/projects/fatboyspizza.png';
 
 const skills = [
     {
-        title: 'Backend',
+        title: 'Backend Developer',
         icon: Backend,
         color: '#908484',
     },
     {
-        title: 'Database',
-        icon: Database,
-        color: '#718963',
-    },
-    {
-        title: 'Frontend',
+        title: 'Frontend Developer',
         icon: Frontend,
         color: '#a9ab8a',
     },
     {
-        title: 'Architecture',
+        title: 'Database Design & Admin',
+        icon: Database,
+        color: '#718963',
+    },
+    {
+        title: 'Software Architecture',
         icon: Architecture,
         color: '#6e7e7a',
     },
     {
-        title: 'Design',
+        title: 'UI / UX Design',
         icon: Design,
         color: '#6c7381',
     },
     {
-        title: 'Devops',
+        title: 'Devops / CI',
         icon: Devops,
         color: '#cbbea7',
     },
@@ -59,13 +64,17 @@ const skills = [
         color: '#6e6666',
     },
     {
-        title: 'Mentor & Leader',
+        title: 'Mentoring & Leadership',
         icon: Leadership,
         color: '#776979',
     },
 ];
 
 const technologies = [
+    {
+        name: 'React',
+        icon: React,
+    },
     {
         name: 'C#',
         icon: CSharp,
@@ -75,24 +84,8 @@ const technologies = [
         icon: DotNet,
     },
     {
-        name: 'Blazor',
-        icon: Blazor,
-    },
-    {
-        name: 'ASP.NET',
-        icon: Asp,
-    },
-    {
         name: 'SQL Server',
         icon: Sql,
-    },
-    {
-        name: 'React JS',
-        icon: React,
-    },
-    {
-        name: 'Redux JS',
-        icon: Redux,
     },
     {
         name: 'Javascript',
@@ -103,7 +96,23 @@ const technologies = [
         icon: Typescript,
     },
     {
-        name: 'CSS',
+        name: 'Redux',
+        icon: Redux,
+    },
+    {
+        name: 'Blazor',
+        icon: Blazor,
+    },
+    {
+        name: 'ASP.NET',
+        icon: Asp,
+    },
+    {
+        name: 'Node',
+        icon: Node,
+    },
+    {
+        name: 'HTML / CSS',
         icon: Css,
     },
     {
@@ -130,13 +139,31 @@ const technologies = [
 
 const projects = [
     {
+        name: 'The Hotel Company',
+        image: TheHotelCo,
+        imageLight: TheHotelCoLight,
+        url: 'https://thehotelcompany.netlify.app',
+        github: 'https://github.com/MarcusBullock/The-Hotel',
+        description:
+            'A back office website for finance analytics, sales data, and booking management for a fictional hotel company. Uses React with Styled Components for styling, React Query for global state management, and Supabase for database / authentication and image storage.',
+    },
+    {
         name: "Fatboy's Pizza",
+        image: Pizza,
+        imageLight: Pizza,
+        url: 'https://fatboys-pizza.netlify.app/',
+        github: 'https://github.com/MarcusBullock/Online-Pizza-Delivery',
+        description:
+            'A basic online pizza delivery website with React Router fetch-as-you-render functionality to get menu API data, Redux/Thunk for global state management, and styling with Tailwind.css',
     },
     {
         name: 'Wayfarer',
-    },
-    {
-        name: 'The Hotel Company',
+        image: Wayfarer,
+        imageLight: Wayfarer,
+        url: 'https://waayfarer.netlify.app/',
+        github: 'https://github.com/MarcusBullock/Wayfarer',
+        description:
+            "A React JS application to keep track of all the places you've been in the world, with Google maps-like pin drop functionality using React Leaflet maps. The app uses a small Node.js backend server to manage your visited cities.",
     },
 ];
 

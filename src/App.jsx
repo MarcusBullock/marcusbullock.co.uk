@@ -30,8 +30,9 @@ function App() {
                     >
                         <Technologies theme={theme} />
                     </div>
-
-                    <Projects />
+                    <div className="projects">
+                        <Projects theme={theme} />
+                    </div>
                 </div>
             </main>
         </BrowserRouter>

@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Beckman';
+    src: url('../src/assets/fonts/Beckman.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 .dark {
     --background-color: #121212;
     --text-color: #ffffff;
@@ -61,12 +68,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 button {
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
     padding: 0.5em 1em;
     border: none;
     cursor: pointer;
-    transition: background-color 1s, color 1s;
 }
 
 button:hover {
@@ -114,6 +118,7 @@ p {
     letter-spacing: -2px;
 }
 
+.projects,
 .tech,
 .about {
     background-color: var(--background-color);
