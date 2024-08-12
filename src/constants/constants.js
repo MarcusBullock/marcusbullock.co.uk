@@ -26,6 +26,11 @@ import Wayfarer from '../assets/images/projects/wayfarer.png';
 import TheHotelCo from '../assets/images/projects/thehotelcompany.png';
 import TheHotelCoLight from '../assets/images/projects/hotelcompany-light.png';
 import Pizza from '../assets/images/projects/fatboyspizza.png';
+import Tap from '../assets/images/experience/tap.png';
+import Trayport from '../assets/images/experience/trayport.png';
+import Makers from '../assets/images/experience/makers.png';
+import G3 from '../assets/images/experience/g3.png';
+import StanChart from '../assets/images/experience/stanchart.png';
 
 const skills = [
     {
@@ -84,7 +89,7 @@ const technologies = [
         icon: DotNet,
     },
     {
-        name: 'SQL Server',
+        name: 'SQL',
         icon: Sql,
     },
     {
@@ -112,7 +117,7 @@ const technologies = [
         icon: Node,
     },
     {
-        name: 'HTML / CSS',
+        name: 'CSS',
         icon: Css,
     },
     {
@@ -167,4 +172,47 @@ const projects = [
     },
 ];
 
-export { skills, technologies, projects };
+const experiences = [
+    {
+        title: 'Senior Software Developer',
+        company: 'The Adventure People',
+        icon: Tap,
+        startDate: 'November 2019',
+        endDate: 'Present',
+        desc: 'Hugely autonomous role in a highly dynamic startup environment. Leader on many projects developing new and existing applications from the ground up involving C#, React/Typescript, SQL Server, AWS, Elastic and too many others to mention. Co-led the dev team responsible for growing from its infancy to annual revenues in the dozens of millions of pounds.',
+    },
+    {
+        title: 'Software Developer',
+        company: 'Trayport',
+        icon: Trayport,
+        startDate: 'May 2016',
+        endDate: 'November 2019',
+        desc: "Full stack developer at the world's top energy trading software provider, working primarily in .NET, SQL Server and React/Typescript, working with some of the brightest minds in the industry at the forefront of commodities and energy trading software.",
+    },
+    {
+        title: 'Development Bootcamp Graduate',
+        company: "Maker's Academy",
+        icon: Makers,
+        startDate: 'November 2015',
+        endDate: 'April 2016',
+        desc: 'I took a sabbatical while working at G3 to really further my computer science and web development skills at the industry leading coding bootcamp.',
+    },
+    {
+        title: 'Analyst / Software Developer',
+        company: 'G3',
+        icon: G3,
+        startDate: 'October 2011',
+        endDate: 'April 2016',
+        desc: 'Part of the cyber security team at an industry leading corporate intelligence firm serving FTSE100 clients and high net worth individuals. I trained as an in-house software developer as well as an analyst on corporate intelligence projects.',
+    },
+    {
+        title: 'Corporate Affairs Intern',
+        company: 'Standard Chartered Bank',
+        icon: StanChart,
+        startDate: 'May 2011',
+        endDate: 'October 2011',
+        desc: 'Finance intern at the corporate affairs department at a world leading bank',
+    },
+];
+
+export { skills, technologies, projects, experiences };

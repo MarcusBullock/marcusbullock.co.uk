@@ -1,4 +1,4 @@
-import { easeIn, easeInOut, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { fadeIn } from '../../../utils/motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
@@ -16,10 +16,10 @@ function Project({ index, active, handleClick, project, theme }) {
             )}
             whileHover={{
                 scale: 1.025,
-                boxShadow: `3px 3px 8px var(--text-color)`, // Add shadow on hover
+                boxShadow: `3px 3px 8px var(--text-color)`,
                 transition: {
-                    duration: 0.3, // Duration of the hover animation
-                    ease: 'easeInOut', // Smooth ease in-out transition
+                    duration: 0.3,
+                    ease: 'easeInOut',
                 },
             }}
             onClick={() => handleClick(project.name)}
@@ -37,26 +37,33 @@ function Project({ index, active, handleClick, project, theme }) {
                     </div>
                 ) : (
                     <>
-                        <div className={styles.x1}>
-                            <div className={styles.x2}>
+                        <div className={styles.projectCard}>
+                            <div className={styles.projectCardContainer}>
                                 <div
                                     onClick={() =>
                                         window.open(project.github, '_blank')
                                     }
-                                    className={styles.x3}
+                                    className={styles.github}
                                 >
                                     <img
                                         src={Github}
                                         alt="source code"
-                                        className={styles.x4}
+                                        className={styles.githubIcon}
                                     />
                                 </div>
                             </div>
 
-                            <h2 className={styles.x5}>{project.name}</h2>
-                            <p className={styles.x6}>{project.description}</p>
+                            <h2 className={styles.projectName}>
+                                {project.name}
+                            </h2>
+                            <p className={styles.projectDesc}>
+                                {project.description}
+                            </p>
                             <button
-                                className={styles.x7}
+                                className={classNames(
+                                    styles.projectLinkBtn,
+                                    styles.glassmorphism
+                                )}
                                 onClick={() =>
                                     window.open(project.url, '_blank')
                                 }

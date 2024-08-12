@@ -7,6 +7,7 @@ import Technologies from './components/technologies/Technologies';
 import Cards from './components/about/cards/Cards';
 import { skills } from './constants/constants';
 import Projects from './components/projects/Projects';
+import Experience from './components/experience/Experience';
 
 function App() {
     const [theme, setTheme] = useState('light');
@@ -25,13 +26,22 @@ function App() {
 
                     <div
                         className={`tech ${
-                            theme === 'light' ? 'imageLight' : 'imageDark'
+                            theme === 'light' ? 'londonLight' : 'londonDark'
                         }`}
                     >
                         <Technologies theme={theme} />
                     </div>
                     <div className="projects">
                         <Projects theme={theme} />
+                    </div>
+                    <div className="experience">
+                        <div
+                            className={`exp ${
+                                theme === 'light' ? 'expLight' : 'expDark'
+                            }`}
+                        >
+                            <Experience theme={theme} />
+                        </div>
                     </div>
                 </div>
             </main>

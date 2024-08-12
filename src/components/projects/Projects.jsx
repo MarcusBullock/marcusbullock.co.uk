@@ -11,8 +11,8 @@ function Projects({ theme }) {
     return (
         <div className={styles.projects}>
             <motion.div variants={textVariant()}>
-                <p className={`${styles.header} `}>Extras</p>
-                <h2 className={`${styles.header2}`}>Side Projects.</h2>
+                <p className={`${styles.header} `}>Portfolio.</p>
+                <h2 className={`${styles.header2}`}>Projects.</h2>
             </motion.div>
             <div>
                 <motion.p

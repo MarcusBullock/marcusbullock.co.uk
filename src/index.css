@@ -1,28 +1,28 @@
 @font-face {
     font-family: 'Mova';
     src: url('../src/assets/fonts/Mova.otf') format('opentype');
-    font-weight: 500;
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SegoeUI';
     src: url('../src/assets/fonts/SegoeUi.ttf') format('opentype');
-    font-weight: 500;
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Droid Sans';
     src: url('../src/assets/fonts/DroidSans.ttf') format('opentype');
-    font-weight: 500;
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Beckman';
     src: url('../src/assets/fonts/Beckman.otf') format('opentype');
-    font-weight: 500;
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     font-style: normal;
 }
 
@@ -118,6 +118,7 @@ p {
     letter-spacing: -2px;
 }
 
+.experience,
 .projects,
 .tech,
 .about {
@@ -131,20 +132,7 @@ p {
     background-repeat: no-repeat;
 }
 
-.card-gradient {
-    background: rgb(244, 244, 246);
-    background: linear-gradient(
-        158deg,
-        rgba(153, 153, 161, 1) 25%,
-        rgba(153, 153, 161, 1) 100%
-    );
-}
-
-.App {
-    position: relative;
-}
-
-.imageLight {
+.londonLight {
     background-image: linear-gradient(
             165deg,
             rgba(255, 255, 255, 0.7) 100%,
@@ -154,7 +142,7 @@ p {
     background-blend-mode: luminosity;
 }
 
-.imageDark {
+.londonDark {
     background-image: linear-gradient(
             165deg,
             rgba(20, 20, 20, 0.85) 100%,
@@ -162,4 +150,43 @@ p {
         ),
         url('./assets/images/london.jpg');
     background-blend-mode: luminosity;
+}
+
+.experience {
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.exp {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 130px;
+    border-top-left-radius: 150px;
+}
+
+.expLight {
+    background-image: linear-gradient(
+            165deg,
+            rgba(255, 255, 255, 0.6) 100%,
+            rgba(109, 109, 116, 0.9) 100%
+        ),
+        url('./assets/images/experience-light.jpg');
+    filter: opacity(80%);
+}
+
+.expDark {
+    background-image: linear-gradient(
+            165deg,
+            rgba(20, 20, 20, 0.85) 100%,
+            rgba(109, 109, 116, 0.95) 100%
+        ),
+        url('./assets/images/experience-dark.jpg');
+}
+
+.App {
+    background-color: var(--background-color);
 }

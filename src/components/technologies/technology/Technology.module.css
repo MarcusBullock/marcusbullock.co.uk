@@ -1,16 +1,15 @@
 .technology {
-    width: 8rem;
-    height: 8rem;
-}
-
-.ball {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
-    width: 100%;
     position: relative;
+}
+
+.ball {
+    width: 7rem;
+    height: 7rem;
 }
 
 .name {
@@ -18,7 +17,7 @@
     font-weight: 500;
     font-family: 'Poppins';
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     right: 10%;
     left: 10%;
 }
