@@ -118,6 +118,7 @@ p {
     letter-spacing: -2px;
 }
 
+.contact,
 .experience,
 .projects,
 .tech,
@@ -132,6 +133,11 @@ p {
     background-repeat: no-repeat;
 }
 
+.contact {
+    position: relative;
+    z-index: 0;
+}
+
 .londonLight {
     background-image: linear-gradient(
             165deg,
@@ -143,12 +149,7 @@ p {
 }
 
 .londonDark {
-    background-image: linear-gradient(
-            165deg,
-            rgba(20, 20, 20, 0.85) 100%,
-            rgba(109, 109, 116, 0.95) 100%
-        ),
-        url('./assets/images/london.jpg');
+    background-image: url('./assets/images/london.jpg');
     background-blend-mode: luminosity;
 }
 

@@ -1,7 +1,4 @@
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import CvPdf from '../../../assets/cv/cv.pdf';
 import CvIcon from '../../../assets/images/experience/cv.png';
 import styles from './Cv.module.css';
 import CvButton from '../../hero/cvButton/CvButton';

@@ -17,6 +17,7 @@ import Blazor from '../assets/images/tech/blazor.png';
 import Asp from '../assets/images/tech/aspdotnet.png';
 import Aws from '../assets/images/tech/aws.png';
 import Node from '../assets/images/tech/node.png';
+import Next from '../assets/images/tech/nextjs.png';
 import Azure from '../assets/images/tech/azure.png';
 import Elastic from '../assets/images/tech/elastic.png';
 import Postgres from '../assets/images/tech/postgresql.png';
@@ -99,6 +100,10 @@ const technologies = [
     {
         name: 'Typescript',
         icon: Typescript,
+    },
+    {
+        name: 'NextJS',
+        icon: Next,
     },
     {
         name: 'Redux',

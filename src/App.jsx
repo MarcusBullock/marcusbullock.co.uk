@@ -8,9 +8,15 @@ import Cards from './components/about/cards/Cards';
 import { skills } from './constants/constants';
 import Projects from './components/projects/Projects';
 import Experience from './components/experience/Experience';
+import Contact from './components/contact/Contact';
 
 function App() {
     const [theme, setTheme] = useState('light');
+
+    function toggleTheme() {
+        setTheme((theme) => (theme === 'light' ? 'dark' : 'light'));
+    }
+
     return (
         <BrowserRouter>
             <main>
@@ -43,14 +49,13 @@ function App() {
                             <Experience theme={theme} />
                         </div>
                     </div>
+                    <div className="contact">
+                        <Contact theme={theme} />
+                    </div>
                 </div>
             </main>
         </BrowserRouter>
     );
-
-    function toggleTheme() {
-        setTheme((theme) => (theme === 'light' ? 'dark' : 'light'));
-    }
 }
 
 export default App;
