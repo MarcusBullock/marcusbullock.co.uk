@@ -1,16 +1,9 @@
 .portrait {
     position: absolute;
     bottom: 0;
-    height: 33vh;
-    left: 29vh;
+    height: 45vh;
+    left: 33vh;
     user-select: none;
-}
-
-@media screen and (min-width: 345px) {
-    .portrait {
-        height: 33vh;
-        left: 33vh;
-    }
 }
 
 @media screen and (min-width: 400px) {

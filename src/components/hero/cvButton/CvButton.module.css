@@ -5,6 +5,7 @@
     font-family: 'Mova';
     text-wrap: nowrap;
     padding: 0 0.5rem;
+    max-width: 180px;
 }
 
 .cvButton:active {
@@ -50,24 +51,6 @@
     opacity: 0.65;
     pointer-events: none;
     cursor: not-allowed;
-}
-
-@media screen and (min-width: 320px) {
-    .cvButton {
-        height: 40px;
-        border-radius: 25px;
-        font-size: 14px;
-        font-family: 'Mova';
-        text-wrap: nowrap;
-        padding: 0 0.5rem;
-    }
-    .widthClicked {
-        width: 270px;
-    }
-
-    .widthNotClicked {
-        width: 270px;
-    }
 }
 
 @media screen and (min-width: 370px) {

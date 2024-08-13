@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from '@fortawesome/free-solid-svg-icons';
+import MobileMenuItem from './MobileMenuItem';
 import classNames from 'classnames';
 import styles from './MobileMenu.module.css';
-import MobileMenuItem from './MobileMenuItem';
 
 function MobileMenu({ theme, menuIsOpen, setActiveTabName, setMenuIsOpen }) {
     return (
@@ -29,21 +29,18 @@ function MobileMenu({ theme, menuIsOpen, setActiveTabName, setMenuIsOpen }) {
                 <MobileMenuItem
                     title="about"
                     theme={theme}
-                    toggle={menuIsOpen}
                     setToggle={setMenuIsOpen}
                     setActive={setActiveTabName}
                 />
                 <MobileMenuItem
                     title="projects"
                     theme={theme}
-                    toggle={menuIsOpen}
                     setToggle={setMenuIsOpen}
                     setActive={setActiveTabName}
                 />
                 <MobileMenuItem
                     title="contact"
                     theme={theme}
-                    toggle={menuIsOpen}
                     setToggle={setMenuIsOpen}
                     setActive={setActiveTabName}
                 />

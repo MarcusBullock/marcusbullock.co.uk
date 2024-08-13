@@ -106,6 +106,10 @@
     cursor: none;
 }
 
+.submitted:hover {
+    background-color: #c2c1bd !important;
+}
+
 .row {
     display: flex;
     flex-direction: row;
