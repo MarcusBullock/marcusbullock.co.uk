@@ -3,6 +3,7 @@ import { BallCanvas } from './ball/index.js';
 import styles from './Technology.module.css';
 
 const Technology = ({ tech, theme }) => {
+    console.log(tech.icon);
     return (
         <div className={styles.technology} key={tech.name}>
             <div

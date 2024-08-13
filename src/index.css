@@ -13,6 +13,13 @@
 }
 
 @font-face {
+    font-family: 'SegoeUI Semibold';
+    src: url('../src/assets/fonts/SegoeUi.ttf') format('opentype');
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Droid Sans';
     src: url('../src/assets/fonts/DroidSans.ttf') format('opentype');
     font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
@@ -71,10 +78,6 @@ button {
     padding: 0.5em 1em;
     border: none;
     cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.8;
 }
 
 a {

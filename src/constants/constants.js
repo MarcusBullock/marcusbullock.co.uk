@@ -21,7 +21,6 @@ import Next from '../assets/images/tech/nextjs.png';
 import Azure from '../assets/images/tech/azure.png';
 import Elastic from '../assets/images/tech/elastic.png';
 import Postgres from '../assets/images/tech/postgresql.png';
-import Git from '../assets/images/tech/git.png';
 import Css from '../assets/images/tech/css.png';
 import Wayfarer from '../assets/images/projects/wayfarer.png';
 import TheHotelCo from '../assets/images/projects/thehotelcompany.png';
@@ -140,10 +139,6 @@ const technologies = [
     {
         name: 'Postgresql',
         icon: Postgres,
-    },
-    {
-        name: 'Git',
-        icon: Git,
     },
 ];
 

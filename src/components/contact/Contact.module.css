@@ -86,12 +86,35 @@
     align-items: center;
     padding: 1.2rem 0;
     white-space: nowrap;
-    width: 100px;
+    width: 130px;
     height: 45px;
     border-radius: 10px;
     transition: ease-in-out;
     transition-duration: 0.2s;
     margin-top: 16px;
+    color: #3f3f3f;
+}
+
+.btn:hover {
+    background-color: #a3c99f;
+}
+
+.submitted {
+    background-color: #c2c1bd;
+    border: 3px solid green;
+    color: white;
+    cursor: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.error {
+    margin-top: 12px;
+    color: rgb(197, 55, 55);
 }
 
 @media screen and (min-width: 420px) {
@@ -109,7 +132,7 @@
     .btn {
         gap: 1rem;
         font-size: 20px;
-        width: 130px;
+        width: 170px;
         height: 50px;
     }
 }
