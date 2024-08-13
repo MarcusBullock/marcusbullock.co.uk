@@ -179,7 +179,7 @@ const experiences = [
         icon: Tap,
         startDate: 'November 2019',
         endDate: 'Present',
-        desc: 'Hugely autonomous role in a highly dynamic startup environment. Leader on many projects developing new and existing applications from the ground up involving C#, React/Typescript, SQL Server, AWS, Elastic and too many others to mention. Co-led the dev team responsible for growing from its infancy to annual revenues in the dozens of millions of pounds.',
+        desc: 'Hugely autonomous role in a dynamic startup environment. Leader on many projects developing new and existing applications involving C#, React/Typescript, SQL Server, AWS, Elastic and too many others to mention. Co-led the dev team responsible for growing the company from its infancy to annual revenues in the dozens of millions of pounds.',
     },
     {
         title: 'Software Developer',

@@ -60,10 +60,7 @@ function Project({ index, active, handleClick, project, theme }) {
                                 {project.description}
                             </p>
                             <button
-                                className={classNames(
-                                    styles.projectLinkBtn,
-                                    styles.glassmorphism
-                                )}
+                                className={styles.projectLinkBtn}
                                 onClick={() =>
                                     window.open(project.url, '_blank')
                                 }

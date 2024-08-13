@@ -1,14 +1,14 @@
 .cvButton {
-    height: 35px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-    user-select: none;
-    font-size: 16px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 14px;
     font-family: 'Mova';
+    text-wrap: nowrap;
+    padding: 0 0.5rem;
 }
 
 .cvButton:active {
-    border: 1px solid green;
+    border: 4px solid green;
 }
 
 .cvButtonLightMode {
@@ -22,7 +22,7 @@
 }
 
 .widthClicked {
-    border: 1px solid green;
+    border: 4px solid green;
     width: 220px;
 }
 
@@ -56,8 +56,10 @@
     .cvButton {
         height: 40px;
         border-radius: 25px;
-        font-size: 19px;
+        font-size: 14px;
         font-family: 'Mova';
+        text-wrap: nowrap;
+        padding: 0 0.5rem;
     }
     .widthClicked {
         width: 270px;
@@ -70,10 +72,13 @@
 
 @media screen and (min-width: 370px) {
     .cvButton {
-        height: 50px;
+        height: 40px;
         border-radius: 25px;
-        font-size: 22px;
+        font-size: 14px;
         font-family: 'Mova';
+        text-wrap: nowrap;
+        padding: 0 0.5rem;
+        max-width: 180px;
     }
     .widthClicked {
         width: 310px;
@@ -85,5 +90,15 @@
 
     .links {
         padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .cvButton {
+        height: 50px;
+        border-radius: 25px;
+        font-size: 22px;
+        font-family: 'Mova';
+        max-width: 280px;
     }
 }

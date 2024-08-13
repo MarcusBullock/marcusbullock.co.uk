@@ -1,5 +1,6 @@
 import { VerticalTimelineElement } from 'react-vertical-timeline-component';
 import styles from './Card.module.css';
+import classNames from 'classnames';
 
 function Card({ experience, theme, index }) {
     const backgrounds =
@@ -20,11 +21,14 @@ function Card({ experience, theme, index }) {
                 borderRight: `7px solid  ${backgrounds[index]}`,
             }}
             date={
-                <div>
-                    <h3 className={styles.date}>
-                        {experience.startDate} - {experience.endDate}
-                    </h3>
-                </div>
+                <h3
+                    className={classNames(
+                        styles.date,
+                        theme === 'light' ? styles.dateLight : styles.dateDark
+                    )}
+                >
+                    {experience.startDate} - {experience.endDate}
+                </h3>
             }
             iconStyle={{
                 background: '#fff',

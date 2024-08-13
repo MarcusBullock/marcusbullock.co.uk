@@ -10,7 +10,7 @@ function Cv({ theme }) {
     return (
         <VerticalTimelineElement
             contentStyle={{
-                background: 'var(--text-color)',
+                background: theme === 'light' ? '#ffffff' : '#d6d5d5',
                 color: 'var(--background-color)',
                 boxShadow:
                     'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
@@ -20,7 +20,9 @@ function Cv({ theme }) {
                 alignItems: 'center',
             }}
             contentArrowStyle={{
-                borderRight: '7px solid  #232631',
+                borderRight: `7px solid ${
+                    theme === 'light' ? '#ffffff' : '#d6d5d5'
+                }`,
             }}
             iconStyle={{
                 background: '#fff',
@@ -36,10 +38,6 @@ function Cv({ theme }) {
                 </div>
             }
         >
-            {/* <a className={styles.btn} href={CvPdf} download="marcusbullock_cv">
-                <FontAwesomeIcon icon={faDownload} size="lg" color="#cac300" />
-                DOWNLOAD CV
-            </a> */}
             <CvButton theme={theme} />
         </VerticalTimelineElement>
     );
