@@ -34,7 +34,7 @@
     width: 100%;
     object-fit: cover;
     border-radius: 24px;
-    opacity: 0.92;
+    opacity: 49%;
     user-select: none;
 }
 
@@ -54,11 +54,18 @@
     white-space: nowrap;
     font-size: 18px;
     height: 30px;
-    color: var(--background-color);
     letter-spacing: 1px;
     position: absolute;
     z-index: 0;
     line-height: 1;
+}
+
+.light {
+    color: #c8c6c6;
+}
+
+.dark {
+    color: #393939;
 }
 
 .projectCard {

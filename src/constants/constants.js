@@ -25,6 +25,7 @@ import Css from '../assets/images/tech/css.png';
 import Wayfarer from '../assets/images/projects/wayfarer.png';
 import TheHotelCo from '../assets/images/projects/thehotelcompany.png';
 import TheHotelCoLight from '../assets/images/projects/hotelcompany-light.png';
+import TheHotelCoMainWebsite from '../assets/images/projects/hotelcompany-website.png';
 import Pizza from '../assets/images/projects/fatboyspizza.png';
 import Tap from '../assets/images/experience/tap.png';
 import Trayport from '../assets/images/experience/trayport.png';
@@ -144,13 +145,22 @@ const technologies = [
 
 const projects = [
     {
-        name: 'The Hotel Company',
+        name: 'The Hotel Company Analytics',
         image: TheHotelCo,
         imageLight: TheHotelCoLight,
         url: 'https://thehotelcompany.netlify.app',
         github: 'https://github.com/MarcusBullock/The-Hotel',
         description:
             'A back office website for finance analytics, sales data, and booking management for a fictional hotel company. Uses React with Styled Components for styling, React Query for global state management, and Supabase for database / authentication and image storage.',
+    },
+    {
+        name: 'The Hotel Company',
+        image: TheHotelCoMainWebsite,
+        imageLight: TheHotelCoMainWebsite,
+        url: 'thehotelcompany-marcusbullocks-projects.vercel.app',
+        github: 'https://github.com/MarcusBullock/the-hotel-company-website',
+        description:
+            'A fictional hotel company website, where users can view rooms and make bookings, and manage these bookings in their customer accounts. Written using the server side rendering framework NextJS. Uses Tailwind for styling and Supabase for database/Google authentication/image storage.',
     },
     {
         name: "Fatboy's Pizza",

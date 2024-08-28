@@ -26,14 +26,21 @@ function Project({ index, active, handleClick, project, theme }) {
         >
             <div className={styles.projectContainer}>
                 <img
-                    src={theme === 'light' ? project.imageLight : project.image}
+                    src={theme === 'light' ? project.image : project.imageLight}
                     alt={project.name}
                     className={styles.projectImage}
                 />
 
                 {active !== project.name ? (
                     <div className={styles.projHeaderContainer}>
-                        <h3 className={styles.projHeader}>{project.name}</h3>
+                        <h3
+                            className={classNames(
+                                styles.projHeader,
+                                theme === 'light' ? styles.light : styles.dark
+                            )}
+                        >
+                            {project.name}
+                        </h3>
                     </div>
                 ) : (
                     <>
