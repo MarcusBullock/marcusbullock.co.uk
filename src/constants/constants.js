@@ -157,7 +157,7 @@ const projects = [
         name: 'The Hotel Company',
         image: TheHotelCoMainWebsite,
         imageLight: TheHotelCoMainWebsite,
-        url: 'thehotelcompany-marcusbullocks-projects.vercel.app',
+        url: 'https://thehotelcompany-marcusbullocks-projects.vercel.app',
         github: 'https://github.com/MarcusBullock/the-hotel-company-website',
         description:
             'A fictional hotel company website, where users can view rooms and make bookings, and manage these bookings in their customer accounts. Written using the server side rendering framework NextJS. Uses Tailwind for styling and Supabase for database/Google authentication/image storage.',
