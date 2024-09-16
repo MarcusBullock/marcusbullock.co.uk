@@ -26,6 +26,7 @@ import Wayfarer from '../assets/images/projects/wayfarer.png';
 import TheHotelCo from '../assets/images/projects/thehotelcompany.png';
 import TheHotelCoLight from '../assets/images/projects/hotelcompany-light.png';
 import TheHotelCoMainWebsite from '../assets/images/projects/hotelcompany-website.png';
+import MarketLens from '../assets/images/projects/marketlens.png';
 import Pizza from '../assets/images/projects/fatboyspizza.png';
 import Tap from '../assets/images/experience/tap.png';
 import Trayport from '../assets/images/experience/trayport.png';
@@ -145,6 +146,15 @@ const technologies = [
 
 const projects = [
     {
+        name: 'MarketLens',
+        image: MarketLens,
+        imageLight: MarketLens,
+        url: 'https://marketlenz.netlify.app',
+        github: 'https://github.com/MarcusBullock/market-lens',
+        description:
+            'Find any stock and see a 5 year history of its performance, as well as other stock details. The dashboard shows metrics like top gaining and losing stocks for the day and daily stock news. Written in React, and the charts/metrics use Recharts.',
+    },
+    {
         name: 'The Hotel Company Analytics',
         image: TheHotelCo,
         imageLight: TheHotelCoLight,
@@ -163,15 +173,6 @@ const projects = [
             'A fictional hotel company website, where users can view rooms and make bookings, and manage these bookings in their customer accounts. Written using the server side rendering framework NextJS. Uses Tailwind for styling and Supabase for database/Google authentication/image storage.',
     },
     {
-        name: "Fatboy's Pizza",
-        image: Pizza,
-        imageLight: Pizza,
-        url: 'https://fatboys-pizza.netlify.app/',
-        github: 'https://github.com/MarcusBullock/Online-Pizza-Delivery',
-        description:
-            'A basic online pizza delivery website with React Router fetch-as-you-render functionality to get menu API data, Redux/Thunk for global state management, and styling with Tailwind.css',
-    },
-    {
         name: 'Wayfarer',
         image: Wayfarer,
         imageLight: Wayfarer,
@@ -179,6 +180,15 @@ const projects = [
         github: 'https://github.com/MarcusBullock/Wayfarer',
         description:
             "A React JS application to keep track of all the places you've been in the world, with Google maps-like pin drop functionality using React Leaflet maps. The app uses a small Node.js backend server to manage your visited cities.",
+    },
+    {
+        name: "Fatboy's Pizza",
+        image: Pizza,
+        imageLight: Pizza,
+        url: 'https://fatboys-pizza.netlify.app/',
+        github: 'https://github.com/MarcusBullock/Online-Pizza-Delivery',
+        description:
+            'A basic online pizza delivery website with React Router fetch-as-you-render functionality to get menu API data, Redux/Thunk for global state management, and styling with Tailwind.css',
     },
 ];
 

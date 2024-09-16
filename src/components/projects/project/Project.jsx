@@ -32,16 +32,14 @@ function Project({ index, active, handleClick, project, theme }) {
                 />
 
                 {active !== project.name ? (
-                    <div className={styles.projHeaderContainer}>
-                        <h3
-                            className={classNames(
-                                styles.projHeader,
-                                theme === 'light' ? styles.light : styles.dark
-                            )}
-                        >
-                            {project.name}
-                        </h3>
-                    </div>
+                    <h3
+                        className={classNames(
+                            styles.projHeader,
+                            theme === 'light' ? styles.light : styles.dark
+                        )}
+                    >
+                        {project.name}
+                    </h3>
                 ) : (
                     <>
                         <div className={styles.projectCard}>
