@@ -5,8 +5,15 @@ import classNames from 'classnames';
 function Card({ experience, theme, index }) {
     const backgrounds =
         theme === 'light'
-            ? ['#3c565e', '#338b85', '#522929', '#878931', '#447633']
-            : ['#7f9694', '#92a7a9', '#909090', '#7e7e67', '#a9bba3'];
+            ? ['#3c565e', '#338b85', '#522929', '#878931', '#447633', '#a6bd88']
+            : [
+                  '#7f9694',
+                  '#92a7a9',
+                  '#909090',
+                  '#7e7e67',
+                  '#a9bba3',
+                  '#a3aa8b',
+              ];
     return (
         <VerticalTimelineElement
             contentStyle={{

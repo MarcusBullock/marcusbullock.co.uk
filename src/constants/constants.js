@@ -33,6 +33,7 @@ import Trayport from '../assets/images/experience/trayport.png';
 import Makers from '../assets/images/experience/makers.png';
 import G3 from '../assets/images/experience/g3.png';
 import StanChart from '../assets/images/experience/stanchart.png';
+import Bgc from '../assets/images/experience/bgc.png';
 
 const skills = [
     {
@@ -195,10 +196,18 @@ const projects = [
 const experiences = [
     {
         title: 'Senior Software Developer',
+        company: 'BGC Group',
+        icon: Bgc,
+        startDate: 'September 2024',
+        endDate: 'Present',
+        desc: "I recently started an exciting new role working at BGC Group's equity derivatives team, working on critical systems and applications, primarily in .NET and React.",
+    },
+    {
+        title: 'Senior Software Developer',
         company: 'The Adventure People',
         icon: Tap,
         startDate: 'November 2019',
-        endDate: 'Present',
+        endDate: 'September 2024',
         desc: 'Hugely autonomous role in a dynamic startup environment. Leader on many projects developing new and existing applications involving C#, React/Typescript, SQL Server, AWS, Elastic and too many others to mention. Co-led the dev team responsible for growing the company from its infancy to annual revenues in the dozens of millions of pounds.',
     },
     {
